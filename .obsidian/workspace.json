@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "dc4a2b76732c3f83",
+    "type": "split",
+    "children": [
+      {
+        "id": "8bd63b0309cc4925",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "439bd73e41abec11",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "1_base_papers/4_A_damage_phase_field_model_for_hydrofracturing_of_glacier.pdf"
+              }
+            }
+          },
+          {
+            "id": "a76d219b392e3f4c",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "1_base_papers/1_formulation.canvas",
+                "viewState": {
+                  "x": -196.91720511678173,
+                  "y": -70.08628127498139,
+                  "zoom": 0.6666666666666667
+                }
+              }
+            }
+          },
+          {
+            "id": "a34e807f52e526ca",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "1_base_papers/4_A_damage_phase_field_model_for_hydrofracturing_of_glacier.pdf"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b682144ba4d53118",
+    "type": "split",
+    "children": [
+      {
+        "id": "3471d91aaf88b2c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b7d180770d90678d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "522ecb9e1df46ecc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7c896f88a6dd9f98",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7917660115f3e75a",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e3e8cdc8281f8bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6de40a68892284d9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1_base_papers/4_A_damage_phase_field_model_for_hydrofracturing_of_glacier.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ffa29a4a9af82db6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1_base_papers/4_A_damage_phase_field_model_for_hydrofracturing_of_glacier.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e04a1e126cba0a8c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6bf1d06bd436b500",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1_base_papers/4_A_damage_phase_field_model_for_hydrofracturing_of_glacier.pdf"
+              }
+            }
+          },
+          {
+            "id": "a54bd9d5ad162776",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "a34e807f52e526ca",
+  "lastOpenFiles": [
+    "1_base_papers/3_Phasefield.pdf",
+    "1_base_papers/4_A_damage_phase_field_model_for_hydrofracturing_of_glacier.pdf",
+    "template.sublime-workspace",
+    "2_reference_codes/2_phase-field-model-code/plot_crevasse_hwr0.py",
+    "2_reference_codes/2_phase-field-model-code/output/mesh/xml/notch.xml",
+    "2_reference_codes/2_phase-field-model-code/output/mesh/xml",
+    "2_reference_codes/2_phase-field-model-code/output/mesh",
+    "2_reference_codes/2_phase-field-model-code/output/figs/data_hsr0_hwr0_8p_Threshold.png",
+    "2_reference_codes/2_phase-field-model-code/output/figs/data_hsr0_hwr0_8p_Threshold-force.png",
+    "2_reference_codes/2_phase-field-model-code/output/details/time_log_1.txt",
+    "2_reference_codes/2_phase-field-model-code/output/details/simulation_log_1.txt",
+    "2_reference_codes/2_phase-field-model-code/output/details",
+    "2_reference_codes/2_phase-field-model-code/output/figs",
+    "1_base_papers/1_formulation.canvas",
+    "3_our_implementation/1_workshop/1_static_validation/1_no_notch/readme.md",
+    "1_base_papers/attachments/Pasted image 20230708202623.png",
+    "1_base_papers/attachments/Pasted image 20230708194207.png",
+    "1_base_papers/attachments/Pasted image 20230708194029.png",
+    "1_base_papers/attachments/Pasted image 20230708192944.png",
+    "1_base_papers/attachments/Pasted image 20230708191249.png",
+    "3_our_implementation/1_workshop/1_static_validation/2_with_notch/readme.md",
+    "3_our_implementation/1_workshop/1_static_validation/readme.md",
+    "3_our_implementation/1_workshop/README.md",
+    "3_our_implementation/1_workshop/2_fracture_validation/readme.md",
+    "1_base_papers/attachments/Pasted image 20230706162817.png",
+    "1_base_papers/attachments/Pasted image 20230706162746.png",
+    "1_base_papers/3_Decontruction.md",
+    "3_our_implementation/1_workshop/1_static_validation/attachments/Pasted image 20221121115836.png",
+    "3_our_implementation/1_workshop/1_fenic_stoke_flow/readme.md"
+  ]
+}
