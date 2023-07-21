@@ -3,5 +3,6 @@
   "textFontFamily": "Bitter",
   "baseFontSize": 21,
   "cssTheme": "Atom",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "enabledCssSnippets": []
 }

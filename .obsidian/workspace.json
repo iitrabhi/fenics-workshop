@@ -4,46 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "8bd63b0309cc4925",
+        "id": "7730aa7e7976f125",
         "type": "tabs",
         "children": [
           {
-            "id": "439bd73e41abec11",
+            "id": "983468907783e8ec",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "1_base_papers/4_A_damage_phase_field_model_for_hydrofracturing_of_glacier.pdf"
-              }
-            }
-          },
-          {
-            "id": "a76d219b392e3f4c",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "1_base_papers/1_formulation.canvas",
-                "viewState": {
-                  "x": -196.91720511678173,
-                  "y": -70.08628127498139,
-                  "zoom": 0.6666666666666667
-                }
-              }
-            }
-          },
-          {
-            "id": "a34e807f52e526ca",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "1_base_papers/4_A_damage_phase_field_model_for_hydrofracturing_of_glacier.pdf"
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_base_papers/4_A_damage_phase_field_model_for_hydrofracturing_of_glacier.pdf",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_base_papers/4_A_damage_phase_field_model_for_hydrofracturing_of_glacier.pdf",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_base_papers/4_A_damage_phase_field_model_for_hydrofracturing_of_glacier.pdf"
+                "file": "README.md"
               }
             }
           },
@@ -179,8 +156,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a34e807f52e526ca",
+  "active": "983468907783e8ec",
   "lastOpenFiles": [
+    "exercises/1_convergence.ipynb.md",
+    "README.md",
+    "tutorials/1_linear_poisson.ipynb.md",
+    "exercises.md",
+    "tutorials/1_sphere_scatterer_null_field.ipynb.md",
+    "tutorials/0_install.ipynb.md",
+    "tutorials/5_loudspeaker.ipynb.md",
+    "README.ipynb",
     "1_base_papers/3_Phasefield.pdf",
     "1_base_papers/4_A_damage_phase_field_model_for_hydrofracturing_of_glacier.pdf",
     "template.sublime-workspace",
@@ -192,8 +177,6 @@
     "2_reference_codes/2_phase-field-model-code/output/figs/data_hsr0_hwr0_8p_Threshold-force.png",
     "2_reference_codes/2_phase-field-model-code/output/details/time_log_1.txt",
     "2_reference_codes/2_phase-field-model-code/output/details/simulation_log_1.txt",
-    "2_reference_codes/2_phase-field-model-code/output/details",
-    "2_reference_codes/2_phase-field-model-code/output/figs",
     "1_base_papers/1_formulation.canvas",
     "3_our_implementation/1_workshop/1_static_validation/1_no_notch/readme.md",
     "1_base_papers/attachments/Pasted image 20230708202623.png",

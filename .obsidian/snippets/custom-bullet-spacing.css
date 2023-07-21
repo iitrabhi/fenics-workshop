@@ -1,0 +1,4 @@
+/* Adjust the indentation for bullet lists */
+.theme-atom .CodeMirror-li {
+    padding-left: 44em; /* Change this value to adjust the indentation */
+}
