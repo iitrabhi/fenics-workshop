@@ -6,7 +6,7 @@ The course materials, including tutorials and exercises, were created as part of
 
 The  [tutorials](tutorials/) are comprehensive notebooks that demonstrate how to approach different types of problems using FEniCS. On the other hand, the  [exercises](exercises/) are meant to be interactive, and they encourage you to expand the notebooks by adding new functionalities. This way, you can develop your expertise in using FEniCS.
 
-If you just want to view the tutorials and exercises without making any changes, you can access them on [on nbviewer](https://nbviewer.org/github/iitrabhi/iitm-fenics-course/blob/e16f3bc5cdc0c12fd50da662ab7cb17aba89d49a/README.ipynb) without installing FEniCS. However, if you want to edit and undertake the exercises, you will need to  [install FEniCS](tutorials/0_install.ipynb). Additionally, you have the option to either clone the repository or download the code from the provided link.
+If you just want to view the tutorials and exercises without making any changes, you can access them on [on nbviewer](https://github.com/iitrabhi/iitm-fenics-course/blob/48a6a14f8f7c27f2a32cf1ea101e18934d254b01/README.ipynb) without installing FEniCS. However, if you want to edit and undertake the exercises, you will need to  [install FEniCS](tutorials/0_install.ipynb). Additionally, you have the option to either clone the repository or download the code from the provided link.
 
 ## What is FEniCS
 
