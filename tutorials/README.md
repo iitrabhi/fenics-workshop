@@ -30,6 +30,8 @@ Note: you should replace the variable `host_system_path` with the path of the fo
 docker run -p 8888:8888 -v D:\Codes:/root/ -w /root/ iitrabhi/fenics_notebook
 ```
 
+Once you run the above command in `cmder` you will get a URL starting with `http://127.0.0.1:8888/lab`. Press Control and click on the URL to open a new Jupyter notebook.
+
 ## If you have Windows home
 
 https://fem-on-colab.github.io/packages.html
