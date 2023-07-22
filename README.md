@@ -15,7 +15,7 @@ FEniCS is an acronym that stands for "Finite Element Computational Software." Th
 FEniCS is a high-performance computing (HPC) capable tool that efficiently utilizes supercomputers and high-performance clusters to solve complex scientific problems. It supports parallel computing, JIT compilation, and integrates with PETSc and MPI for scalability and performance. Its HPC capabilities enable researchers to perform large-scale simulations and analyses effectively.
 
 ## Contents
-- [Instructions for installing FEniCS](tutorials/README.ipynb)
+- [Instructions for installing FEniCS](install-instructions.ipynb)
 - Day 1
   - [Tutorial 1-1: Solving linear Poisson's equation](tutorials/1_linear_poisson.ipynb)
   - [Exercise 1-1: Convergence](exercises/1_convergence.ipynb)
