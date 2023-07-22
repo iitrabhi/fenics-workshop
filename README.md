@@ -17,8 +17,8 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
 ## Contents
 - [Instructions for installing FEniCS](tutorials/README.ipynb)
 - Day 1
-  - [Tutorial 1: Solving linear Poisson's equation](tutorials/1_linear_poisson.ipynb)
-  - [Exercise 1: Convergence](exercises/1_convergence.ipynb)
+  - [Tutorial 1-1: Solving linear Poisson's equation](tutorials/1_linear_poisson.ipynb)
+  - [Exercise 1-1: Convergence](exercises/1_convergence.ipynb)
 
 ## Where to find help
 
