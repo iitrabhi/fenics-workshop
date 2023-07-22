@@ -4,9 +4,10 @@ To follow along with the examples you need to install docker on your system. You
 
 * [Docker](https://www.docker.com/products/docker-desktop)
 * [Paraview](https://www.paraview.org/download/)
-* [CMDER](https://cmder.net/) (Only for Windows)
+* [CMDER](https://cmder.net/) (Only for Windows) (After installation open `cmder` and then go-to Settings(Win+Alt+P)➡import and choose the `cmlab.xml` provided in the repository.)
 
-After installation open `cmder` and then go-to Settings(Win+Alt+P)➡import and choose the `cmlab.xml` provided in the repository.
+* [Google Chrome](https://www.google.com/chrome/) (After installation open chrome and paste the following in address bar, `chrome://flags/`. In the flags screen enable `WebGL Developer Extensions` )
+
 
 ## Install FEniCS
 
