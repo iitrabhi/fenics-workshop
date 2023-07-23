@@ -35,4 +35,14 @@ Once you run the above command in `cmder` you will get a URL starting with `http
 
 ## If you have Windows home
 
+You can use google colab to run FEniCS on the cloud. Open colab and paste the following in the first cell of your notebook.
+
+```
+try:
+    import dolfin
+except ImportError:
+    !wget "https://fem-on-colab.github.io/releases/fenics-install.sh" -O "/tmp/fenics-install.sh" && bash "/tmp/fenics-install.sh"
+    import dolfin
+```
+
 https://fem-on-colab.github.io/packages.html
