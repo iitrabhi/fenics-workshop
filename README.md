@@ -17,13 +17,23 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
 ## Contents
 - [Instructions for installing FEniCS](install-instructions.ipynb)
 - Day 1
-  - [Tutorial 1-1: Solving linear Poisson's equation](src/day-1/tutorials/1_linear_poisson.ipynb)
-  - [Tutorial 1-2: Visualization](src\day-1\tutorials\2_visualization.ipynb)
-  - [Exercise 1-1: Built in meshes](src\day-1\exercises\1_built_in_mesh.ipynb)
-  - [Exercise 1-2: Boundary conditions](src\day-1\exercises\2_boundary_conditions.ipynb)
-  - [Exercise 1-3: Expressions](src\day-1\exercises\3_expressions.ipynb)
-  - [Exercise 1-4: Spacially varying properties](src\day-1\exercises\4_spacially_varying_properties.ipynb)
-  - [Exercise 1-5: Convergence](src\day-1\exercises\5_convergence.ipynb)
+  - Tutorials
+    - [Tutorial 1-1: Solving linear Poisson's equation](src/day-1/tutorials/1_linear_poisson.ipynb)
+    - [Tutorial 1-2: Visualization](src\day-1\tutorials\2_visualization.ipynb)
+  - Exercises
+    - [Exercise 1-1: Built in meshes](src\day-1\exercises\1_built_in_mesh.ipynb)
+    - [Exercise 1-2: Boundary conditions](src\day-1\exercises\2_boundary_conditions.ipynb)
+    - [Exercise 1-3: Expressions](src\day-1\exercises\3_expressions.ipynb)
+    - [Exercise 1-4: Spacially varying properties](src\day-1\exercises\4_spacially_varying_properties.ipynb)
+    - [Exercise 1-5: Convergence](src\day-1\exercises\5_convergence.ipynb)
+- Day 2
+  - Tutorials
+    - [Tutorial 2-1: Solving non-linear Poisson's equation](src/day-2/tutorials/1_non_linear_poisson.ipynb)
+    - [Tutorial 2-2: Auto differentiation](src\day-2\tutorials\2_auto-differentiation.ipynb)
+    - [Tutorial 2-3: Solver design](src\day-2\tutorials\2_solver_design.ipynb)
+  - Exercises
+    - [Exercise 2-1: Built in meshes](src\day-1\exercises\1_built_in_mesh.ipynb)
+    - [Exercise 2-2: Boundary conditions](src\day-1\exercises\2_boundary_conditions.ipynb)
 
 ## Where to find help
 
