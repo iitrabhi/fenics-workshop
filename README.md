@@ -28,12 +28,15 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
     - [Exercise 1-5: Convergence](src\day-1\exercises\5_convergence.ipynb)
 - Day 2
   - Tutorials
-    - [Tutorial 2-1: Solving non-linear Poisson's equation](src/day-2/tutorials/1_non_linear_poisson.ipynb)
-    - [Tutorial 2-2: Auto differentiation](src\day-2\tutorials\2_auto-differentiation.ipynb)
-    - [Tutorial 2-3: Solver design](src\day-2\tutorials\2_solver_design.ipynb)
+    - [Tutorial 2-1: Solving non-linear Poisson's equation using Picard Iteration](src\day-2\tutorials\1_non_linear_poisson_picard.ipynb)
+    - [Tutorial 2-2: Solving non-linear Poisson's equation using Newton Iteration](src\day-2\tutorials\2_non_linear_poisson_newton.ipynb)
+    - [Tutorial 2-3: Automatic Differentiation](src\day-2\tutorials\3_non_linear_poisson_newton_auto_diff.ipynb)
   - Exercises
-    - [Exercise 2-1: Built in meshes](src\day-1\exercises\1_built_in_mesh.ipynb)
-    - [Exercise 2-2: Boundary conditions](src\day-1\exercises\2_boundary_conditions.ipynb)
+    - [Exercise 2-1: 2D and 3D Domains](src\day-2\exercises\1_2d_3d_domains.ipynb)
+    - [Exercise 2-2: Boundary Conditions](src\day-2\exercises\2_boundary_conditions.ipynb)
+    - [Exercise 2-3: Non-Linearity and Tolerances](src\day-2\exercises\3_non_linearity_tolerances.ipynb)
+    - [Exercise 2-4: Manual vs Auto differentiation](src\day-2\exercises\4_manual_auto_differentiation.ipynb)
+
 
 ## Where to find help
 
