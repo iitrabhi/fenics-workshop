@@ -29,8 +29,9 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
 - Day 2
   - Tutorials
     - [Tutorial 2-1: Solving non-linear Poisson's equation using Picard Iteration](src\day-2\tutorials\1_non_linear_poisson_picard.ipynb)
-    - [Tutorial 2-2: Solving non-linear Poisson's equation using Newton Iteration](src\day-2\tutorials\2_non_linear_poisson_newton.ipynb)
-    - [Tutorial 2-3: Automatic Differentiation](src\day-2\tutorials\3_non_linear_poisson_newton_auto_diff.ipynb)
+    - - [Tutorial 2-3: Solving non-linear Poisson's equation using Newton Iteration](src\day-2\tutorials\3_non_linear_poisson_newton.ipynb)
+    - [Tutorial 2-3: Newton method with Manual Differentiation](src\day-2\tutorials\3_non_linear_poisson_newton_manual_diff.ipynb)
+    - [Tutorial 2-4: Newton method with Automatic Differentiation](src\day-2\tutorials\4_non_linear_poisson_newton_auto_diff.ipynb)
   - Exercises
     - [Exercise 2-1: 2D and 3D Domains](src\day-2\exercises\1_2d_3d_domains.ipynb)
     - [Exercise 2-2: Boundary Conditions](src\day-2\exercises\2_boundary_conditions.ipynb)
