@@ -38,6 +38,16 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
     - [Exercise 2-3: Non-Linearity and Tolerances](src/day-2/exercises/3_non_linearity_tolerances.ipynb)
     - [Exercise 2-4: Manual vs Auto differentiation](src/day-2/exercises/4_manual_auto_differentiation.ipynb)
 
+- Day 3
+  - Tutorials
+    - [Tutorial 3-1: Beam bending](src/day-3/tutorials/1_beam_bending.ipynb)
+    - [Tutorial 3-2: Loads and boundary conditions](src/day-3/tutorials/2_load_and_boundary_conditions.ipynb)
+    - [Tutorial 3-3: Solver design](src/day-3/tutorials/3_solver.ipynb)
+  - Exercises
+    - [Exercise 3-1: 3D Uniaxial]
+    - [Exercise 3-1: Plane Stress v/s Plane strain]
+    - [Exercise 3-1: Effect of solver design]
+
 
 ## Where to find help
 
