@@ -59,3 +59,9 @@ When in doubt about any specific FEniCS command or implementation, there are sev
 4. **FEniCS online documentation:** The online documentation since V1.3.0 is available at [this link](https://fenicsproject.org/olddocs/dolfin/). You can go into the python folder of any version to find the syntax and meaning of different commands. The latest version is not that descriptive, and thus I recommend checking out older documentation, as most of the commands are the same.
 
 Note: Please go through the official community [page here](https://fenicsproject.org/community/).
+
+## Books to read
+1. Bleyer, Jeremy. “Numerical Tours of Continuum Mechanics Using FEniCS,” n.d., 105.
+2. Langtangen, Hans Petter, and Anders Logg. “Solving PDEs in Python – The FEniCS Tutorial Volume I,” n.d., 153.
+3. Langtangen, Hans Petter, and Kent-Andre Mardal. “Introduction to Numerical Methods for Variational Problems”. Vol. 21. Texts in Computational Science and Engineering. Cham: Springer International Publishing, 2019. https://doi.org/10.1007/978-3-030-23788-2.
+4. Logg, Anders, Kent-Andre Mardal, and Garth Wells, eds. “Automated Solution of Differential Equations by the Finite Element Method”. Vol. 84. Lecture Notes in Computational Science and Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2012. https://doi.org/10.1007/978-3-642-23099-8.
