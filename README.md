@@ -44,9 +44,9 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
     - [Tutorial 3-2: Loads and boundary conditions](src/day-3/tutorials/2_load_and_boundary_conditions.ipynb)
     - [Tutorial 3-3: Solver design](src/day-3/tutorials/3_solver.ipynb)
   - Exercises
-    - [Exercise 3-1: 3D Uniaxial]
-    - [Exercise 3-1: Plane Stress v/s Plane strain]
-    - [Exercise 3-1: Effect of solver design]
+    - [Exercise 3-1: 3D Uniaxial](src/day-3/exercises/1_3d_uniaxial.ipynb)
+    - [Exercise 3-1: Plane Stress v/s Plane strain](src/day-3/exercises/2_plane_stress_strain.ipynb)
+    - [Exercise 3-1: Effect of solver design](src/day-3/exercises/3_solver_design.ipynb)
 
 
 ## Where to find help
