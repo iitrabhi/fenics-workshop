@@ -158,6 +158,7 @@
   },
   "active": "983468907783e8ec",
   "lastOpenFiles": [
+    "src/day-4/exercises/2_comparison.ipynb",
     "src/day-4/exercises/1_mooney-rivlin.ipynb",
     "src/day-4/exercises",
     "src/day-4/tutorials/exercises",
@@ -168,7 +169,6 @@
     "src/day-4/tutorials/1_hyper_elastic.ipynb",
     "src/day-4/tutorials",
     "src/day-4",
-    "src/day-2/exercises/3_non_linearity_tolerances.ipynb",
     "install-instructions.md",
     "src/day-1/tutorials/install-instructions.md",
     "src/day-1/tutorials/README.md",
