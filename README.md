@@ -37,7 +37,6 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
     - [Exercise 2-2: Boundary Conditions](src/day-2/exercises/2_boundary_conditions.ipynb)
     - [Exercise 2-3: Non-Linearity and Tolerances](src/day-2/exercises/3_non_linearity_tolerances.ipynb)
     - [Exercise 2-4: Manual vs Auto differentiation](src/day-2/exercises/4_manual_auto_differentiation.ipynb)
-
 - Day 3
   - Tutorials
     - [Tutorial 3-1: Beam bending](src/day-3/tutorials/1_beam_bending.ipynb)
@@ -45,8 +44,15 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
     - [Tutorial 3-3: Solver design](src/day-3/tutorials/3_solver.ipynb)
   - Exercises
     - [Exercise 3-1: 3D Uniaxial](src/day-3/exercises/1_3d_uniaxial.ipynb)
-    - [Exercise 3-1: Plane Stress v/s Plane strain](src/day-3/exercises/2_plane_stress_strain.ipynb)
-    - [Exercise 3-1: Effect of solver design](src/day-3/exercises/3_solver_design.ipynb)
+    - [Exercise 3-2: Plane Stress v/s Plane strain](src/day-3/exercises/2_plane_stress_strain.ipynb)
+    - [Exercise 3-3: Effect of solver design](src/day-3/exercises/3_solver_design.ipynb)
+- Day 4
+  - Tutorials
+    - [Tutorial 4-1: Solving hyper elasticity in FEniCS](src/day-4/tutorials/1_hyper_elastic.ipynb)
+    - [Tutorial 4-1: Pseudo time stepping in hyper elasticity](src/day-4/tutorials/2_load_displacement.ipynb)
+  - Exercises
+    - [Exercise 3-1: Mooney rivlin material model](src/day-4/exercises/1_mooney-rivlin.ipynb)
+    - [Exercise 3-2: Comparison between elastic and hyperelastic solution](src/day-4/exercises/2_comparison.ipynb)
 
 
 ## Where to find help
