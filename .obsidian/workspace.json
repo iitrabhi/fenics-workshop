@@ -158,6 +158,8 @@
   },
   "active": "983468907783e8ec",
   "lastOpenFiles": [
+    "src/day-5/exercises/2_thermo_mechanical_transient.ipynb",
+    "src/day-5/exercises/1_bi_metallic_quasi_static.ipynb",
     "src/day-5/tutorials/1_thermoelasticity.ipynb",
     "src/day-5/tutorials/3_transient_analysis.ipynb",
     "src/day-5/tutorials/2_multi_material.ipynb",
@@ -167,8 +169,6 @@
     "src/day-5/exercises",
     "src/day-5/New folder",
     "src/day-5/tutorials",
-    "src/day-5",
-    "src/New folder",
     "install-instructions.md",
     "src/day-1/tutorials/install-instructions.md",
     "src/day-1/tutorials/README.md",
