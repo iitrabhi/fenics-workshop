@@ -51,8 +51,16 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
     - [Tutorial 4-1: Solving hyper elasticity in FEniCS](src/day-4/tutorials/1_hyper_elastic.ipynb)
     - [Tutorial 4-1: Pseudo time stepping in hyper elasticity](src/day-4/tutorials/2_load_displacement.ipynb)
   - Exercises
-    - [Exercise 3-1: Mooney rivlin material model](src/day-4/exercises/1_mooney-rivlin.ipynb)
-    - [Exercise 3-2: Comparison between elastic and hyperelastic solution](src/day-4/exercises/2_comparison.ipynb)
+    - [Exercise 4-1: Mooney rivlin material model](src/day-4/exercises/1_mooney-rivlin.ipynb)
+    - [Exercise 4-2: Comparison between elastic and hyperelastic solution](src/day-4/exercises/2_comparison.ipynb)
+- Day 5
+  - Tutorials
+    - [Tutorial 5-1:Thermoelasticity](src/day-5/tutorials/1_thermoelasticity.ipynb)
+    - [Tutorial 5-2:Multi-material domains](src/day-5/tutorials/2_multi_material.ipynb)
+    - [Tutorial 5-3:Transient analysis](src/day-5/tutorials/3_transient_analysis.ipynb)
+  - Exercise
+    - [Exercise 5-1:Bi-metallic quasi static analysis](src/day-5/exercises/1_bi_metallic_quasi_static.ipynb)
+    - [Exercise 5-2:Transient thermo-mechanical analysis](src/day-5/exercises/2_thermo_mechanical_transient.ipynb)
 
 
 ## Where to find help
