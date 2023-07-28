@@ -11,13 +11,8 @@
             "id": "983468907783e8ec",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           },
           {
@@ -158,17 +149,17 @@
   },
   "active": "983468907783e8ec",
   "lastOpenFiles": [
-    "iitm-fenics-course-2023.pdf",
-    "src/day-4/exercises/2_comparison.ipynb",
-    "src/day-4/exercises/1_mooney-rivlin.ipynb",
-    "src/day-4/exercises",
-    "src/day-4/tutorials/exercises",
-    "src/day-4/exercises/2_",
-    "src/day-4/exercises/1_comparison.ipynb",
-    "src/day-4/exercises/1_plane_strain.ipynb",
-    "src/day-4/tutorials/2_load_displacement.ipynb",
+    "src/day-5/tutorials/2_multi_material.ipynb",
+    "src/day-5/tutorials/3_transient_analysis.ipynb",
+    "src/day-5/tutorials/1_thermoelasticity.ipynb",
+    "src/day-5/exercises/2_thermo_mechanical_transient.ipynb",
+    "src/day-5/exercises/1_bi_metallic_quasi_static.ipynb",
+    "src/day-5/tutorials",
+    "src/day-5/exercises",
+    "src/day-5",
+    "README.md",
     "src/day-4/tutorials/1_hyper_elastic.ipynb",
-    "src/day-4/tutorials",
+    "src/day-1/tutorials/1_linear_poisson.ipynb",
     "install-instructions.md",
     "src/day-1/tutorials/install-instructions.md",
     "src/day-1/tutorials/README.md",
@@ -177,7 +168,6 @@
     "src/tutorials/README.md",
     "tutorials/README.md",
     "tutorials/0_install.ipynb.md",
-    "README.md",
     "exercises/1_convergence.ipynb.md",
     "tutorials/1_linear_poisson.ipynb.md",
     "exercises.md",
