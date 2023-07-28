@@ -54,7 +54,6 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
     - [Exercise 3-1: Mooney rivlin material model](src/day-4/exercises/1_mooney-rivlin.ipynb)
     - [Exercise 3-2: Comparison between elastic and hyperelastic solution](src/day-4/exercises/2_comparison.ipynb)
 
-
 ## Where to find help
 
 When in doubt about any specific FEniCS command or implementation, there are several resources you can refer to for clarification and assistance:
