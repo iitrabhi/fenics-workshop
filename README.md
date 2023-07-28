@@ -63,6 +63,7 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
     - [Exercise 5-2:Transient thermo-mechanical analysis](src/day-5/exercises/2_thermo_mechanical_transient.ipynb)
 
 
+
 ## Where to find help
 
 When in doubt about any specific FEniCS command or implementation, there are several resources you can refer to for clarification and assistance:
