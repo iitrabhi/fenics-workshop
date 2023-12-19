@@ -40,7 +40,7 @@ nav:
       - Motivation: 1_introduction/1_motivation.md
       - Installation: 1_introduction/2_installation.md
       - Quickstart: 1_introduction/3_quickstart.md
-      - FAQ's: 1_introduction/4_faq.md
+      - FAQ: 1_introduction/4_faq.md
   - Tutorials:
       - Poissons Equation: 2_tutorials/1_linear_poisson.md
   - Exercises:
