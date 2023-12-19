@@ -19,6 +19,12 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.arithmatex:
       generic: true
 copyright: Copyright &copy; 2023 - 2024 ⦿ <a href="https://abhigupta.io">Abhinav Gupta</a>
@@ -34,8 +40,8 @@ nav:
       - Motivation: 1_introduction/1_motivation.md
       - Installation: 1_introduction/2_installation.md
       - Quickstart: 1_introduction/3_quickstart.md
-      - FAQ's: 1_introduction/4_contributing.md
+      - FAQ's: 1_introduction/4_faq.md
   - Tutorials:
-      - Getting Started: 2_theory/1_getting_started.md
+      - Poissons Equation: 2_tutorials/1_linear_poisson.md
   - Exercises:
-      - API: 3_api/1_api.md
+      - API: 3_exercises/1_getting_started.md

@@ -55,17 +55,17 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../3_quickstart/">Quickstart</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../4_contributing.md">FAQ's</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../4_faq/">FAQ's</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Tutorials</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="" href="../../2_theory/1_getting_started.md">Getting Started</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_tutorials/1_linear_poisson/">Poissons Equation</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Exercises</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="" href="../../3_api/1_api.md">API</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3_exercises/1_getting_started/">API</a>
                   </li>
               </ul>
       </div>
@@ -106,24 +106,24 @@
 </ul>
 <h2 id="install-fenics">Install FEniCS</h2>
 <p>Once the docker system is installed and running, open CMDER/terminal and run:</p>
-<div class="highlight"><pre><span></span><code>docker pull iitrabhi/fenics_notebook
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker pull iitrabhi/fenics_notebook
+</span></code></pre></div>
 <h2 id="running">Running</h2>
 <p>To start the notebook server, use the following:</p>
-<div class="highlight"><pre><span></span><code>docker run -p 8888:8888 -v host_system_path:/root/ -w /root/ iitrabhi/fenics_notebook
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker run -p 8888:8888 -v host_system_path:/root/ -w /root/ iitrabhi/fenics_notebook
+</span></code></pre></div>
 <p>Note: you should replace the variable <code>host_system_path</code> with the path of the folder that contains your code. e.g., If  <code>D:\Codes</code> contains your code, then to start the command line interface, you have to run:</p>
-<div class="highlight"><pre><span></span><code>docker run -p 8888:8888 -v D:\Codes:/root/ -w /root/ iitrabhi/fenics_notebook
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker run -p 8888:8888 -v D:\Codes:/root/ -w /root/ iitrabhi/fenics_notebook
+</span></code></pre></div>
 <p>Once you run the above command in <code>cmder,</code> you will get a URL starting with <code>http://127.0.0.1:8888/lab</code>. Press Control and click on the URL to open a new Jupyter Notebook.</p>
 <h2 id="if-you-have-windows-home">If you have Windows home</h2>
 <p>You can use google collab to run FEniCS on the cloud. <a href="https://research.google.com/colaboratory/">Open Collab</a>, upload your notebook and paste the following in the first cell of your notebook.</p>
-<div class="highlight"><pre><span></span><code>try:
-    import dolfin
-except ImportError:
-    !wget &quot;https://fem-on-colab.github.io/releases/fenics-install.sh&quot; -O &quot;/tmp/fenics-install.sh&quot; &amp;&amp; bash &quot;/tmp/fenics-install.sh&quot;
-    import dolfin
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>try:
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    import dolfin
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>except ImportError:
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    !wget &quot;https://fem-on-colab.github.io/releases/fenics-install.sh&quot; -O &quot;/tmp/fenics-install.sh&quot; &amp;&amp; bash &quot;/tmp/fenics-install.sh&quot;
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    import dolfin
+</span></code></pre></div>
 <p>https://fem-on-colab.github.io/packages.html</p>
               
             </div>
