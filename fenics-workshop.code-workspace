@@ -6,5 +6,10 @@
 	],
 	"settings": {
 	"notebook.markup.fontSize": 18,
+	"files.exclude": {
+		".doc": true,
+		".obsidian": true,
+		".scripts": true,
+	}
 }
 }

@@ -1,0 +1,41 @@
+site_name: FEniCS Workshop
+theme:
+  name: readthedocs
+  highlightjs: true
+  logo: img/logo.svg
+  icon:
+    admonition:
+      history: img/favicon.ico
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        # See: https://mkdocstrings.github.io/python/usage/
+        python:
+          options:
+            docstring_style: sphinx
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+copyright: Copyright &copy; 2022 - 2026 Abhinav Gupta
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  # - Home: index.md
+  - Introduction:
+      - Motivation: 1_introduction/1_motivation.md
+      - Installation: 1_introduction/2_installation.md
+      - Quickstart: 1_introduction/3_quickstart.md
+      - Contributing: 1_introduction/4_contributing.md
+  - Tutorials:
+      - Getting Started: 2_theory/1_getting_started.md
+  - Exercises:
+      - API: 3_api/1_api.md

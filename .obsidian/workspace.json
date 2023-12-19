@@ -1,18 +1,23 @@
 {
   "main": {
-    "id": "dc4a2b76732c3f83",
+    "id": "c9375c92260150a8",
     "type": "split",
     "children": [
       {
-        "id": "7730aa7e7976f125",
+        "id": "40a692c7cc097a58",
         "type": "tabs",
         "children": [
           {
-            "id": "983468907783e8ec",
+            "id": "eb1045d012fb1005",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "mkdocs/docs/index.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -21,15 +26,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b682144ba4d53118",
+    "id": "717e27c999cf6fc2",
     "type": "split",
     "children": [
       {
-        "id": "3471d91aaf88b2c9",
+        "id": "b689ad5c1195435b",
         "type": "tabs",
         "children": [
           {
-            "id": "b7d180770d90678d",
+            "id": "01f9f9c6e9f233c4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,12 +44,12 @@
             }
           },
           {
-            "id": "522ecb9e1df46ecc",
+            "id": "9b8925677d001693",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "adaptive",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -54,7 +59,7 @@
             }
           },
           {
-            "id": "7c896f88a6dd9f98",
+            "id": "135fb7fa073c0fa9",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -65,22 +70,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 308.5086555480957
   },
   "right": {
-    "id": "7917660115f3e75a",
+    "id": "591fb1ca599ec2fe",
     "type": "split",
     "children": [
       {
-        "id": "7e3e8cdc8281f8bb",
+        "id": "2a421f50372efaf3",
         "type": "tabs",
         "children": [
           {
-            "id": "6de40a68892284d9",
+            "id": "dae937e7a33a296b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "mkdocs/docs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,18 +98,19 @@
             }
           },
           {
-            "id": "ffa29a4a9af82db6",
+            "id": "98ef7530e358eb3c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "mkdocs/docs/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "e04a1e126cba0a8c",
+            "id": "089cbea6edf8f7ca",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -114,22 +121,43 @@
             }
           },
           {
-            "id": "6bf1d06bd436b500",
+            "id": "e9e6a1c264adae8a",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "mkdocs/docs/index.md"
+              }
             }
           },
           {
-            "id": "a54bd9d5ad162776",
+            "id": "d2ce326fca904e46",
             "type": "leaf",
             "state": {
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "6006fb5de24dee80",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "fe26f603e5c09572",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -138,58 +166,66 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": true,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "983468907783e8ec",
+  "active": "eb1045d012fb1005",
   "lastOpenFiles": [
-    "src/day-5/tutorials/2_multi_material.ipynb",
-    "src/day-5/tutorials/3_transient_analysis.ipynb",
-    "src/day-5/tutorials/1_thermoelasticity.ipynb",
-    "src/day-5/exercises/2_thermo_mechanical_transient.ipynb",
-    "src/day-5/exercises/1_bi_metallic_quasi_static.ipynb",
-    "src/day-5/tutorials",
-    "src/day-5/exercises",
-    "src/day-5",
+    "mkdocs/docs/1_introduction/1_motivation.md",
+    "mkdocs/docs/1_introduction/2_installation.md",
+    "mkdocs/docs/1_introduction/3_quickstart.md",
+    "mkdocs/docs/1_introduction/4_faq.md",
+    "mkdocs/docs/index.md",
+    "mkdocs/docs/attachments/Pasted image 20231219133930.png",
+    "mkdocs/docs/attachments",
+    "admin/6_logs/2023-12-18.md",
+    "admin/architecture.canvas",
+    "documentation/docs/index.md",
+    "glacier/__init__.py",
+    "documentation/site/search/search_index.json",
+    "documentation/site/4_examples/1_examples/index.html",
+    "documentation/site/4_examples/1_examples",
+    "documentation/site/4_examples",
+    "documentation/site/3_api/1_api/index.html",
+    "documentation/site/3_api/1_api",
+    "documentation/site/3_api",
+    "documentation/site/2_theory/1_getting_started/index.html",
+    "documentation/site/img/logo.svg",
+    "documentation/docs/2_theory/1_getting_started.md",
+    "documentation/docs/img/logo.svg",
+    "documentation/docs/img/favicon.svg",
+    "documentation/docs/img/favicon.png",
+    "documentation/docs/images/favicon.svg",
+    "documentation/docs/images/logo.svg",
+    "documentation/docs/images/favicon.png",
+    "documentation/images/logo.svg",
+    "documentation/images/favicon.png",
     "README.md",
-    "src/day-4/tutorials/1_hyper_elastic.ipynb",
-    "src/day-1/tutorials/1_linear_poisson.ipynb",
-    "install-instructions.md",
-    "src/day-1/tutorials/install-instructions.md",
-    "src/day-1/tutorials/README.md",
-    "src/day-1/exercises/1_convergence.ipynb.md",
-    "src/exercises/1_convergence.ipynb.md",
-    "src/tutorials/README.md",
-    "tutorials/README.md",
-    "tutorials/0_install.ipynb.md",
-    "exercises/1_convergence.ipynb.md",
-    "tutorials/1_linear_poisson.ipynb.md",
-    "exercises.md",
-    "tutorials/1_sphere_scatterer_null_field.ipynb.md",
-    "tutorials/5_loudspeaker.ipynb.md",
-    "2_reference_codes/2_phase-field-model-code/output/figs/data_hsr0_hwr0_8p_Threshold.png",
-    "2_reference_codes/2_phase-field-model-code/output/figs/data_hsr0_hwr0_8p_Threshold-force.png",
-    "1_base_papers/1_formulation.canvas",
-    "3_our_implementation/1_workshop/1_static_validation/1_no_notch/readme.md",
-    "1_base_papers/attachments/Pasted image 20230708202623.png",
-    "1_base_papers/attachments/Pasted image 20230708194207.png",
-    "1_base_papers/attachments/Pasted image 20230708194029.png",
-    "1_base_papers/attachments/Pasted image 20230708192944.png",
-    "1_base_papers/attachments/Pasted image 20230708191249.png",
-    "3_our_implementation/1_workshop/1_static_validation/2_with_notch/readme.md",
-    "3_our_implementation/1_workshop/1_static_validation/readme.md",
-    "3_our_implementation/1_workshop/README.md",
-    "3_our_implementation/1_workshop/2_fracture_validation/readme.md",
-    "1_base_papers/attachments/Pasted image 20230706162817.png",
-    "1_base_papers/attachments/Pasted image 20230706162746.png",
-    "1_base_papers/3_Decontruction.md",
-    "3_our_implementation/1_workshop/1_static_validation/attachments/Pasted image 20221121115836.png",
-    "3_our_implementation/1_workshop/1_fenic_stoke_flow/readme.md"
+    "documentation/docs/4_examples/1_examples.md",
+    "documentation/docs/3_api/1_api.md",
+    "documentation/docs/1_introduction/4_contributing.md",
+    "documentation/docs/1_introduction/3_quickstart.md",
+    "documentation/docs/1_introduction/2_installation.md",
+    "documentation/docs/1_introduction/1_motivation.md",
+    "documentation/docs/1_introduction/contributing.md",
+    "documentation/docs/1_introduction/quickstart.md",
+    "documentation/docs/1_introduction/installation.md",
+    "documentation/docs/1_introduction/motivation.md",
+    "documentation/docs/api.md",
+    "documentation/docs/1_usage.md",
+    "documentation/README.md",
+    "docs/docs/1_introduction/motivation.md",
+    "tests/README.md",
+    "glacier/README.md",
+    "examples/README.md",
+    "plan.canvas",
+    "3_our_implementation/2_paper_problems/1_calibration/Untitled.canvas",
+    "4_latex_source/paper structure.canvas"
   ]
 }

@@ -1,0 +1,63 @@
+/* for editor */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  background-color: #263444;
+  color: #fff;
+  border-radius: 0.4em;
+  border: 3px solid #90bfe2;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before, .markdown-source-view.mod-cm6 .cm-blockquote-border:before{
+    border-left: 0px ;
+
+}
+
+.cm-formatting-list.cm-formatting-list-ul {
+  margin-right: 16px;
+}
+.markdown-rendered .list-bullet {
+  margin-right: 16px;
+}
+
+.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1{
+  margin-right: 16px;
+}
+
+.cm-line{
+  color:#acacac
+}
+
+/* Change the color and make bold text */
+.cm-strong {
+  color: #f0f0f0; /* Replace with your desired color */
+  /* text-decoration: underline; */
+}
+
+
+.HyperMD-header-2{
+    color: #f0f0f0;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header {
+    padding-bottom: 8px;
+}
+
+.multi-select-pill{
+  background-color: #b8525c;
+  border-radius: 8px;
+  padding-left: 12px;
+  padding-right: 6px;
+  padding-top: 2px;
+  color: #fff !important;
+}
+
+.cm-active{
+  background-color: #3b4252 !important;
+  border-radius: 6px;
+  color: #fff;
+}
+
+img{
+  border-radius: 6px;
+}

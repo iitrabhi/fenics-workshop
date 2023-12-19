@@ -5,5 +5,14 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "./attachments",
   "spellcheck": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "promptDelete": false,
+  "readableLineLength": true,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }

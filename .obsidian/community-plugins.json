@@ -1,6 +1,8 @@
 [
   "tag-wrangler",
   "calendar",
+  "templater-obsidian",
+  "obsidian-smarter-md-hotkeys",
   "ob-table-enhancer",
-  "templater-obsidian"
+  "obsidian-kanban"
 ]
