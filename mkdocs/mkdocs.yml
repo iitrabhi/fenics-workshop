@@ -21,7 +21,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.arithmatex:
       generic: true
-copyright: Copyright &copy; 2022 - 2026 Abhinav Gupta
+copyright: Copyright &copy; 2023 - 2024 ⦿ <a href="https://abhigupta.io">Abhinav Gupta</a>
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -29,12 +29,12 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-  # - Home: index.md
+  - Home: index.md
   - Introduction:
       - Motivation: 1_introduction/1_motivation.md
       - Installation: 1_introduction/2_installation.md
       - Quickstart: 1_introduction/3_quickstart.md
-      - Contributing: 1_introduction/4_contributing.md
+      - FAQ's: 1_introduction/4_contributing.md
   - Tutorials:
       - Getting Started: 2_theory/1_getting_started.md
   - Exercises:
