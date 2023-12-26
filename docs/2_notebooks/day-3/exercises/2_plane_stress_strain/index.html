@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>2_plane_stress_strain.md - FEniCS Workshop</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "2_plane_stress_strain.md";
+        var mkdocs_page_input_path = "2_notebooks/day-3/exercises/2_plane_stress_strain.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../..">
+          <img src="../../../../img/logo.svg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/1_motivation/">Motivation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/2_installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/3_quickstart/">Quickstart</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/4_faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/tutorials/1_linear_poisson/">1_linear_poisson.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/tutorials/2_visualization/">2_visualization.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/tutorials/1_non_linear_poisson_picard/">1_non_linear_poisson_picard.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/tutorials/2_non_linear_poisson_newton/">2_non_linear_poisson_newton.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/tutorials/3_non_linear_poisson_newton_manual_diff/">3_non_linear_poisson_newton_manual_diff.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/tutorials/4_non_linear_poisson_newton_auto_diff/">4_non_linear_poisson_newton_auto_diff.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/1_beam_bending/">1_beam_bending.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/2_load_and_boundary_conditions/">2_load_and_boundary_conditions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/3_solver/">3_solver.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/tutorials/1_hyper_elastic/">1_hyper_elastic.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/tutorials/2_load_displacement/">2_load_displacement.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/tutorials/1_thermoelasticity/">1_thermoelasticity.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/tutorials/2_multi_material/">2_multi_material.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/tutorials/3_transient_analysis/">3_transient_analysis.md</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Exercises</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/1_built_in_mesh/">1_built_in_mesh.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/2_boundary_conditions/">2_boundary_conditions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/3_expressions/">3_expressions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/4_spacially_varying_properties/">4_spacially_varying_properties.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/5_convergence/">5_convergence.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/exercises/1_2d_3d_domains/">1_2d_3d_domains.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/exercises/2_boundary_conditions/">2_boundary_conditions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/exercises/3_non_linearity_tolerances/">3_non_linearity_tolerances.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/exercises/4_manual_auto_differentiation/">4_manual_auto_differentiation.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_3d_uniaxial/">1_3d_uniaxial.md</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">2_plane_stress_strain.md</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_solver_design/">3_solver_design.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/exercises/1_mooney-rivlin/">1_mooney-rivlin.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/exercises/2_comparison/">2_comparison.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/exercises/1_bi_metallic_quasi_static/">1_bi_metallic_quasi_static.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/exercises/2_thermo_mechanical_transient/">2_thermo_mechanical_transient.md</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">FEniCS Workshop</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Exercises</li>
+      <li class="breadcrumb-item active">2_plane_stress_strain.md</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="plane-stress-vs-plane-strain">Plane stress v/s plane strain</h1>
+<p>The objective of this exercise is to implement a finite element analysis (FEA) program using FEniCS to simulate the behavior of a beam under bending, considering both plane stress and plane strain conditions. You will write a FEniCS code to perform the analysis for both cases and compare the results with a 3D analysis of the same beam.</p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<p><svg width="80%" height="80%" viewBox="0 0 2520 690" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><text x="813.67px" y="98.957px" style="font-family:'Montserrat-Bold', 'Montserrat';font-weight:700;font-size:93.01px;fill:#3b3b3b;">1m</text><text x="2192.32px" y="377.242px" style="font-family:'Montserrat-Bold', 'Montserrat';font-weight:700;font-size:93.01px;fill:#3b3b3b;">0<tspan x="2254.26px " y="377.242px ">.</tspan>45m</text><text x="1902.06px" y="652.461px" style="font-family:'Montserrat-Bold', 'Montserrat';font-weight:700;font-size:93.01px;fill:#3b3b3b;">0<tspan x="1964px 1989.3px " y="652.461px 652.461px ">.3</tspan>m</text></svg></p>
+<p>Materials:
+- Steel material properties:
+  - Young's Modulus (E): 200 GPa
+  - Poisson's Ratio (ν): 0.3
+  - Density (ρ): 7850 kg/m^3</p>
+<p>Bar Dimensions:
+- Length (Lx): 1 meter
+- Ly         : 0.3 meter 
+- Lz         : 0.45 meter</p>
+<p>Boundary Conditions:
+- One end of the beam is fixed (fixed boundary condition).
+- The other end is subjected to a uniaxial downward load:
+  - Load (F): 10,000 N</p>
+<p>Mesh:
+- For 3D analysis use a simple 3D mesh for the beam, consisting of tetrahedral elements.
+- For 2D analysis use a simple 2D mesh for the beam, consisting of triangular elements.</p>
+<hr />
+<p>Steps:
+- Perform 3D analysis
+    1. Import FEniCS and Necessary Libraries
+    2. Define the 3D Geometry and Mesh
+    3. Define the Material Properties
+    4. Define the Boundary Conditions
+    5. Define the Finite Element Function Space
+    6. Formulate the Governing Equations
+    7. Solve the System
+- Perform 2D plane stress analysis
+    1. Define the 2D Geometry and Mesh
+    2. Define the Material Properties
+    3. Define the Boundary Conditions
+    4. Define the Finite Element Function Space
+    5. Formulate the Governing Equations
+    6. Solve the System
+- Perform 2D plane strain analysis
+    1. Define the 2D Geometry and Mesh
+    2. Define the Material Properties
+    3. Define the Boundary Conditions
+    4. Define the Finite Element Function Space
+    5. Formulate the Governing Equations
+    6. Solve the System
+- Compare the results of plane stress, plane strain and 3D analysis with analytical solution.
+- See what happens to the solution when you increase the mesh density</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">sim_types</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;3d&quot;</span><span class="p">,</span><span class="s2">&quot;plane_stress&quot;</span><span class="p">,</span> <span class="s2">&quot;plane_strain&quot;</span><span class="p">]</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">sim_type</span> <span class="o">=</span> <span class="n">sim_types</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">E0</span><span class="p">,</span> <span class="n">nu</span> <span class="o">=</span> <span class="mf">2e11</span><span class="p">,</span> <span class="mf">0.3</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">mu</span> <span class="o">=</span> <span class="n">E0</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">nu</span><span class="p">))</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">lmbda</span> <span class="o">=</span> <span class="n">E0</span> <span class="o">*</span> <span class="n">nu</span> <span class="o">/</span> <span class="p">((</span><span class="mi">1</span> <span class="o">+</span> <span class="n">nu</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">nu</span><span class="p">))</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">if</span> <span class="n">sim_type</span> <span class="o">==</span> <span class="s2">&quot;plane_stress&quot;</span><span class="p">:</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">lmbda</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">mu</span> <span class="o">*</span> <span class="n">lmbda</span> <span class="o">/</span> <span class="p">(</span><span class="n">lmbda</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">mu</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>
+</span></code></pre></div>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><rect id="Artboard1" x="0" y="0" width="2519.93" height="689.376" style="fill:#fff;"/><rect x="120.44" y="128.389" width="1514.81" height="450" style="fill:#b9b9b9;"/><rect x="84.62" y="120.54" width="35.82" height="465.699" style="fill:#3f4a47;"/><rect x="1870.64" y="119.688" width="300" height="450" style="fill:#de8383;"/><path d="M1689.89,555.343l-10.318,10.318c-0,-0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,-0c-1.756,1.756 -1.756,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,-0Z"/><path d="M1675.07,128.389l-0,443.636c-0,2.484 2.016,4.5 4.5,4.5c2.483,-0 4.5,-2.016 4.5,-4.5l-0,-443.636c-0,-2.484 -2.017,-4.5 -4.5,-4.5c-2.484,-0 -4.5,2.016 -4.5,4.5Z"/><path d="M1916,171.816l-10.318,10.318c0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.607,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 0,6.364l16.682,16.682l16.682,-16.682c1.757,-1.756 1.757,-4.608 0,-6.364c-1.756,-1.756 -4.607,-1.756 -6.364,0Z"/><path d="M1901.18,119.688l0,68.81c0,2.484 2.017,4.5 4.5,4.5c2.484,0 4.5,-2.016 4.5,-4.5l0,-68.81c0,-2.484 -2.016,-4.5 -4.5,-4.5c-2.483,0 -4.5,2.016 -4.5,4.5Z"/><path d="M1916,279.067l-10.318,10.318c0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.607,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 0,6.364l16.682,16.682l16.682,-16.682c1.757,-1.756 1.757,-4.608 0,-6.364c-1.756,-1.756 -4.607,-1.756 -6.364,0Z"/><path d="M1901.18,226.939l0,68.81c0,2.484 2.017,4.5 4.5,4.5c2.484,0 4.5,-2.016 4.5,-4.5l0,-68.81c0,-2.483 -2.016,-4.5 -4.5,-4.5c-2.483,0 -4.5,2.017 -4.5,4.5Z"/><path d="M1916,396.816l-10.318,10.318c0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.607,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 0,6.364l16.682,16.682l16.682,-16.682c1.757,-1.756 1.757,-4.608 0,-6.364c-1.756,-1.756 -4.607,-1.756 -6.364,0Z"/><path d="M1901.18,344.688l0,68.81c0,2.484 2.017,4.5 4.5,4.5c2.484,0 4.5,-2.016 4.5,-4.5l0,-68.81c0,-2.484 -2.016,-4.5 -4.5,-4.5c-2.483,0 -4.5,2.016 -4.5,4.5Z"/><path d="M1916,508.49l-10.318,10.318c0,-0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.607,-1.756 -6.364,-0c-1.756,1.756 -1.756,4.608 0,6.364l16.682,16.682l16.682,-16.682c1.757,-1.756 1.757,-4.608 0,-6.364c-1.756,-1.756 -4.607,-1.756 -6.364,-0Z"/><path d="M1901.18,456.362l0,68.81c0,2.483 2.017,4.5 4.5,4.5c2.484,-0 4.5,-2.017 4.5,-4.5l0,-68.81c0,-2.484 -2.016,-4.5 -4.5,-4.5c-2.483,-0 -4.5,2.016 -4.5,4.5Z"/><path d="M1960.32,171.816l-10.318,10.318c-0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,0Z"/><path d="M1945.5,119.688l-0,68.81c-0,2.484 2.016,4.5 4.5,4.5c2.484,0 4.5,-2.016 4.5,-4.5l-0,-68.81c-0,-2.484 -2.016,-4.5 -4.5,-4.5c-2.484,0 -4.5,2.016 -4.5,4.5Z"/><path d="M1960.32,279.067l-10.318,10.318c-0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,0Z"/><path d="M1945.5,226.939l-0,68.81c-0,2.484 2.016,4.5 4.5,4.5c2.484,0 4.5,-2.016 4.5,-4.5l-0,-68.81c-0,-2.483 -2.016,-4.5 -4.5,-4.5c-2.484,0 -4.5,2.017 -4.5,4.5Z"/><path d="M1960.32,396.816l-10.318,10.318c-0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,0Z"/><path d="M1945.5,344.688l-0,68.81c-0,2.484 2.016,4.5 4.5,4.5c2.484,0 4.5,-2.016 4.5,-4.5l-0,-68.81c-0,-2.484 -2.016,-4.5 -4.5,-4.5c-2.484,0 -4.5,2.016 -4.5,4.5Z"/><path d="M1960.32,508.49l-10.318,10.318c-0,-0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,-0c-1.756,1.756 -1.756,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,-0Z"/><path d="M1945.5,456.362l-0,68.81c-0,2.483 2.016,4.5 4.5,4.5c2.484,-0 4.5,-2.017 4.5,-4.5l-0,-68.81c-0,-2.484 -2.016,-4.5 -4.5,-4.5c-2.484,-0 -4.5,2.016 -4.5,4.5Z"/><path d="M2004.64,171.816l-10.318,10.318c0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.607,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 0,6.364l16.682,16.682l16.682,-16.682c1.757,-1.756 1.757,-4.608 0,-6.364c-1.756,-1.756 -4.607,-1.756 -6.364,0Z"/><path d="M1989.82,119.688l0,68.81c0,2.484 2.017,4.5 4.5,4.5c2.484,0 4.5,-2.016 4.5,-4.5l0,-68.81c0,-2.484 -2.016,-4.5 -4.5,-4.5c-2.483,0 -4.5,2.016 -4.5,4.5Z"/><path d="M2004.64,279.067l-10.318,10.318c0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.607,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 0,6.364l16.682,16.682l16.682,-16.682c1.757,-1.756 1.757,-4.608 0,-6.364c-1.756,-1.756 -4.607,-1.756 -6.364,0Z"/><path d="M1989.82,226.939l0,68.81c0,2.484 2.017,4.5 4.5,4.5c2.484,0 4.5,-2.016 4.5,-4.5l0,-68.81c0,-2.483 -2.016,-4.5 -4.5,-4.5c-2.483,0 -4.5,2.017 -4.5,4.5Z"/><path d="M2004.64,396.816l-10.318,10.318c0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.607,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 0,6.364l16.682,16.682l16.682,-16.682c1.757,-1.756 1.757,-4.608 0,-6.364c-1.756,-1.756 -4.607,-1.756 -6.364,0Z"/><path d="M1989.82,344.688l0,68.81c0,2.484 2.017,4.5 4.5,4.5c2.484,0 4.5,-2.016 4.5,-4.5l0,-68.81c0,-2.484 -2.016,-4.5 -4.5,-4.5c-2.483,0 -4.5,2.016 -4.5,4.5Z"/><path d="M2004.64,508.49l-10.318,10.318c0,-0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.607,-1.756 -6.364,-0c-1.756,1.756 -1.756,4.608 0,6.364l16.682,16.682l16.682,-16.682c1.757,-1.756 1.757,-4.608 0,-6.364c-1.756,-1.756 -4.607,-1.756 -6.364,-0Z"/><path d="M1989.82,456.362l0,68.81c0,2.483 2.017,4.5 4.5,4.5c2.484,-0 4.5,-2.017 4.5,-4.5l0,-68.81c0,-2.484 -2.016,-4.5 -4.5,-4.5c-2.483,-0 -4.5,2.016 -4.5,4.5Z"/><path d="M2048.96,171.816l-10.318,10.318c-0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,0Z"/><path d="M2034.14,119.688l-0,68.81c-0,2.484 2.016,4.5 4.5,4.5c2.483,0 4.5,-2.016 4.5,-4.5l-0,-68.81c-0,-2.484 -2.017,-4.5 -4.5,-4.5c-2.484,0 -4.5,2.016 -4.5,4.5Z"/><path d="M2048.96,279.067l-10.318,10.318c-0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,0Z"/><path d="M2034.14,226.939l-0,68.81c-0,2.484 2.016,4.5 4.5,4.5c2.483,0 4.5,-2.016 4.5,-4.5l-0,-68.81c-0,-2.483 -2.017,-4.5 -4.5,-4.5c-2.484,0 -4.5,2.017 -4.5,4.5Z"/><path d="M2048.96,396.816l-10.318,10.318c-0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,0Z"/><path d="M2034.14,344.688l-0,68.81c-0,2.484 2.016,4.5 4.5,4.5c2.483,0 4.5,-2.016 4.5,-4.5l-0,-68.81c-0,-2.484 -2.017,-4.5 -4.5,-4.5c-2.484,0 -4.5,2.016 -4.5,4.5Z"/><path d="M2048.96,508.49l-10.318,10.318c-0,-0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,-0c-1.756,1.756 -1.756,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,-0Z"/><path d="M2034.14,456.362l-0,68.81c-0,2.483 2.016,4.5 4.5,4.5c2.483,-0 4.5,-2.017 4.5,-4.5l-0,-68.81c-0,-2.484 -2.017,-4.5 -4.5,-4.5c-2.484,-0 -4.5,2.016 -4.5,4.5Z"/><path d="M2093.28,171.816l-10.318,10.318c0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,0Z"/><path d="M2078.46,119.688l0,68.81c0,2.484 2.017,4.5 4.5,4.5c2.484,0 4.5,-2.016 4.5,-4.5l0,-68.81c0,-2.484 -2.016,-4.5 -4.5,-4.5c-2.483,0 -4.5,2.016 -4.5,4.5Z"/><path d="M2093.28,279.067l-10.318,10.318c0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,0Z"/><path d="M2078.46,226.939l0,68.81c0,2.484 2.017,4.5 4.5,4.5c2.484,0 4.5,-2.016 4.5,-4.5l0,-68.81c0,-2.483 -2.016,-4.5 -4.5,-4.5c-2.483,0 -4.5,2.017 -4.5,4.5Z"/><path d="M2093.28,396.816l-10.318,10.318c0,0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,0c-1.756,1.756 -1.756,4.608 0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,0Z"/><path d="M2078.46,344.688l0,68.81c0,2.484 2.017,4.5 4.5,4.5c2.484,0 4.5,-2.016 4.5,-4.5l0,-68.81c0,-2.484 -2.016,-4.5 -4.5,-4.5c-2.483,0 -4.5,2.016 -4.5,4.5Z"/><path d="M2093.28,508.49l-10.318,10.318c0,-0 -10.318,-10.318 -10.318,-10.318c-1.756,-1.756 -4.608,-1.756 -6.364,-0c-1.756,1.756 -1.756,4.608 0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 0,-6.364c-1.756,-1.756 -4.608,-1.756 -6.364,-0Z"/><path d="M2078.46,456.362l0,68.81c0,2.483 2.017,4.5 4.5,4.5c2.484,-0 4.5,-2.017 4.5,-4.5l0,-68.81c0,-2.484 -2.016,-4.5 -4.5,-4.5c-2.483,-0 -4.5,2.016 -4.5,4.5Z"/><path d="M2137.6,171.816l-10.318,10.318c-0,0 -10.318,-10.318 -10.318,-10.318c-1.757,-1.756 -4.608,-1.756 -6.364,0c-1.757,1.756 -1.757,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.757,-1.756 -4.608,-1.756 -6.364,0Z"/><path d="M2122.78,119.688l-0,68.81c-0,2.484 2.016,4.5 4.5,4.5c2.483,0 4.5,-2.016 4.5,-4.5l-0,-68.81c-0,-2.484 -2.017,-4.5 -4.5,-4.5c-2.484,0 -4.5,2.016 -4.5,4.5Z"/><path d="M2137.6,279.067l-10.318,10.318c-0,0 -10.318,-10.318 -10.318,-10.318c-1.757,-1.756 -4.608,-1.756 -6.364,0c-1.757,1.756 -1.757,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.757,-1.756 -4.608,-1.756 -6.364,0Z"/><path d="M2122.78,226.939l-0,68.81c-0,2.484 2.016,4.5 4.5,4.5c2.483,0 4.5,-2.016 4.5,-4.5l-0,-68.81c-0,-2.483 -2.017,-4.5 -4.5,-4.5c-2.484,0 -4.5,2.017 -4.5,4.5Z"/><path d="M2137.6,396.816l-10.318,10.318c-0,0 -10.318,-10.318 -10.318,-10.318c-1.757,-1.756 -4.608,-1.756 -6.364,0c-1.757,1.756 -1.757,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.757,-1.756 -4.608,-1.756 -6.364,0Z"/><path d="M2122.78,344.688l-0,68.81c-0,2.484 2.016,4.5 4.5,4.5c2.483,0 4.5,-2.016 4.5,-4.5l-0,-68.81c-0,-2.484 -2.017,-4.5 -4.5,-4.5c-2.484,0 -4.5,2.016 -4.5,4.5Z"/><path d="M2137.6,508.49l-10.318,10.318c-0,-0 -10.318,-10.318 -10.318,-10.318c-1.757,-1.756 -4.608,-1.756 -6.364,-0c-1.757,1.756 -1.757,4.608 -0,6.364l16.682,16.682l16.682,-16.682c1.756,-1.756 1.756,-4.608 -0,-6.364c-1.757,-1.756 -4.608,-1.756 -6.364,-0Z"/><path d="M2122.78,456.362l-0,68.81c-0,2.483 2.016,4.5 4.5,4.5c2.483,-0 4.5,-2.017 4.5,-4.5l-0,-68.81c-0,-2.484 -2.017,-4.5 -4.5,-4.5c-2.484,-0 -4.5,2.016 -4.5,4.5Z"/>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../1_3d_uniaxial/" class="btn btn-neutral float-left" title="1_3d_uniaxial.md"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../3_solver_design/" class="btn btn-neutral float-right" title="3_solver_design.md">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; 2023 - 2024 ⦿ <a href="https://abhigupta.io">Abhinav Gupta</a></p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../1_3d_uniaxial/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../3_solver_design/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../javascripts/mathjax.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

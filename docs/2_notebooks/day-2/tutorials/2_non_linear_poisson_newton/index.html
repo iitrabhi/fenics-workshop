@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>2_non_linear_poisson_newton.md - FEniCS Workshop</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "2_non_linear_poisson_newton.md";
+        var mkdocs_page_input_path = "2_notebooks/day-2/tutorials/2_non_linear_poisson_newton.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../..">
+          <img src="../../../../img/logo.svg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/1_motivation/">Motivation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/2_installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/3_quickstart/">Quickstart</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/4_faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/tutorials/1_linear_poisson/">1_linear_poisson.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/tutorials/2_visualization/">2_visualization.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_non_linear_poisson_picard/">1_non_linear_poisson_picard.md</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">2_non_linear_poisson_newton.md</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_non_linear_poisson_newton_manual_diff/">3_non_linear_poisson_newton_manual_diff.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4_non_linear_poisson_newton_auto_diff/">4_non_linear_poisson_newton_auto_diff.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/tutorials/1_beam_bending/">1_beam_bending.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/tutorials/2_load_and_boundary_conditions/">2_load_and_boundary_conditions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/tutorials/3_solver/">3_solver.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/tutorials/1_hyper_elastic/">1_hyper_elastic.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/tutorials/2_load_displacement/">2_load_displacement.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/tutorials/1_thermoelasticity/">1_thermoelasticity.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/tutorials/2_multi_material/">2_multi_material.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/tutorials/3_transient_analysis/">3_transient_analysis.md</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Exercises</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/1_built_in_mesh/">1_built_in_mesh.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/2_boundary_conditions/">2_boundary_conditions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/3_expressions/">3_expressions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/4_spacially_varying_properties/">4_spacially_varying_properties.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/5_convergence/">5_convergence.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../exercises/1_2d_3d_domains/">1_2d_3d_domains.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../exercises/2_boundary_conditions/">2_boundary_conditions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../exercises/3_non_linearity_tolerances/">3_non_linearity_tolerances.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../exercises/4_manual_auto_differentiation/">4_manual_auto_differentiation.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/exercises/1_3d_uniaxial/">1_3d_uniaxial.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/exercises/2_plane_stress_strain/">2_plane_stress_strain.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/exercises/3_solver_design/">3_solver_design.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/exercises/1_mooney-rivlin/">1_mooney-rivlin.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/exercises/2_comparison/">2_comparison.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/exercises/1_bi_metallic_quasi_static/">1_bi_metallic_quasi_static.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/exercises/2_thermo_mechanical_transient/">2_thermo_mechanical_transient.md</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">FEniCS Workshop</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tutorials</li>
+      <li class="breadcrumb-item active">2_non_linear_poisson_newton.md</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="nonlinear-poisson-equation">Nonlinear Poisson equation</h1>
+<div class="arithmatex">\[-div(q(u)*\Delta(u)) = 0,$$
+$$u = 0\text{ at }x=0, u=1\text{ at }x=1$$
+$$q(u) = (1+u)^m\]</div>
+<p>Solution method: Newton method</p>
+<p>Newton iteration is a more sophisticated method for solving nonlinear equations and systems. It is based on linearizing the original problem around an initial guess and then iteratively improving the solution by solving linear approximations of the problem.</p>
+<p>The Newton method is known for its quadratic convergence, which means that the number of correct digits in the solution roughly doubles with each iteration, making it faster than Picard iteration for problems where it converges.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>import matplotlib.pyplot as plt
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>import numpy as np
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>def newton_method(func, derivative, x0, tolerance=1e-6, max_iterations=2):
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    x_vals = [x0]
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    iteration = 0
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    while iteration &lt; max_iterations:
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        x_next = x_vals[-1] - func(x_vals[-1]) / derivative(x_vals[-1])
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        x_vals.append(x_next)
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        if abs(x_vals[-1] - x_vals[-2]) &lt; tolerance:
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            break
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        iteration += 1
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    return x_vals
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a># Define the function and its derivative
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>def func(x):
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    return x**3 - 3*x**2 + 2
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>def derivative(x):
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    tangent_modifier = 2.7
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    return tangent_modifier*(3*x**2 - 6*x)
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a># Initial guess for the root and perform Newton&#39;s method
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>initial_guess = 4
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>root_approximations = newton_method(func, derivative, initial_guess)
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a># Visualization
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>x_vals = np.linspace(1, 4, 100)
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>y_vals = func(x_vals)
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>plt.figure(figsize=(8, 6))
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>plt.plot(x_vals, y_vals, label=&#39;Function: $x^3 - 3x^2 + 2$&#39;)
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>plt.scatter(root_approximations, [func(root) for root in root_approximations], c=&#39;red&#39;, label=&#39;Root Approximations&#39;)
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>for i, root in enumerate(root_approximations):
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>    # plt.annotate(f&#39;Root {i+1}&#39;, xy=(root, func(root)), xytext=(root+0.4, func(root) + 4), arrowprops=dict(arrowstyle=&#39;-&gt;&#39;, lw=1.5))
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>    # Plotting tangent lines
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>    tangent_x = np.linspace(root - 2, root + 2, 100)
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>    tangent_y = func(root) + derivative(root) * (tangent_x - root)
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>    plt.plot(tangent_x, tangent_y, linestyle=&#39;dashed&#39;, color=&#39;gray&#39;)
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>plt.axhline(0, color=&#39;black&#39;, linewidth=0.5)
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>plt.axvline(0, color=&#39;black&#39;, linewidth=0.5)
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>plt.xlabel(&#39;x&#39;)
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>plt.ylabel(&#39;y&#39;)
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>plt.legend()
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a># Set xlim and ylim based on the root approximations
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>plt.xlim(2, 4.3)
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>plt.ylim(min(y_vals) - 1, max(y_vals) + 1)
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>plt.title(&quot;Newton&#39;s Method Visualization with Tangents&quot;)
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>plt.grid(True)
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>plt.show()
+</span></code></pre></div>
+<p><img alt="png" src="../2_non_linear_poisson_newton_files/2_non_linear_poisson_newton_1_0.png" /></p>
+<hr />
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>from dolfin import *
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>import numpy
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>%matplotlib inline
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>mesh = IntervalMesh(40,0,1)
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>V = FunctionSpace(mesh, &#39;Lagrange&#39;, 1)
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a># Define boundary conditions
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>tol = 1E-14
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>left_boundary = CompiledSubDomain(&quot;on_boundary &amp;&amp; near(x[0],0)&quot;)
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>right_boundary = CompiledSubDomain(&quot;on_boundary &amp;&amp; near(x[0],1)&quot;)
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>bc_0 = DirichletBC(V, Constant(0.0), left_boundary)
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>bc_1 = DirichletBC(V, Constant(1.0), right_boundary)
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>bcs = [bc_0, bc_1]
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>m = 5
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>def q(u):
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    return (1+u)**m
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>def Dq(u):
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    return m*(1+u)**(m-1)
+</span></code></pre></div>
+<p>Go to this link for derivation</p>
+<p>https://home.simula.no/~hpl/homepage/fenics-tutorial/release-1.0/webm/nonlinear.html#a-newton-method-at-the-pde-level</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a># Define variational problem for initial guess (q(u)=1, i.e., m=0)
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>u = TrialFunction(V)
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>v = TestFunction(V)
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>a = inner(nabla_grad(u), nabla_grad(v))*dx
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>f = Constant(0.0)
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>L = f*v*dx
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>u_k = Function(V)
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>solve(a == L, u_k, bcs)
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a># Note that all Dirichlet conditions must be zero for
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a># the correction function in a Newton-type method
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>Gamma_0_du = DirichletBC(V, Constant(0.0), left_boundary)
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>Gamma_1_du = DirichletBC(V, Constant(0.0), right_boundary)
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>bcs_du = [Gamma_0_du, Gamma_1_du]
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a># Define variational problem for Newton iteration
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>du = TrialFunction(V)  # u = u_k + omega*du
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>a = inner(q(u_k)*nabla_grad(du), nabla_grad(v))*dx + \
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    inner(Dq(u_k)*du*nabla_grad(u_k), nabla_grad(v))*dx
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>L = -inner(q(u_k)*nabla_grad(u_k), nabla_grad(v))*dx
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a># Newton iteration at the PDE level
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>du = Function(V)
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>u  = Function(V)  # u = u_k + omega*du
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>omega = 1.0       # relaxation parameter
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>absolute_error = 1.0
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>relative_error = 1.0
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>absolute_tolerance = 1.0E-5        # tolerance
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>relative_tolerance = 1.0E-5
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>iter = 0
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>maxiter = 25
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a># u_k must have right boundary conditions here
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>while (absolute_error &gt; absolute_tolerance or relative_error &gt; relative_tolerance) and iter &lt; maxiter:
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>    iter += 1
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>    A, b = assemble_system(a, L, bcs_du)
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>    solve(A, du.vector(), b)
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>    diff = du.vector()[:]
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>    absolute_error = numpy.linalg.norm(diff)
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>    relative_error = absolute_error/numpy.linalg.norm(u_k.vector()[:])
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>    u.vector()[:] = u_k.vector() + omega*du.vector()
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>    print(&#39;iter ={0:3d}, absolute_error = {1:5.2e}, relative_error = {2:5.2e}&#39;.format(
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>        iter, absolute_error, relative_error))
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>    u_k.assign(u)
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code>iter =  1, absolute_error = 2.87e+00, relative_error = 7.71e-01
+iter =  2, absolute_error = 9.00e-01, relative_error = 1.55e-01
+iter =  3, absolute_error = 3.63e-01, relative_error = 7.10e-02
+iter =  4, absolute_error = 6.46e-02, relative_error = 1.32e-02
+iter =  5, absolute_error = 2.21e-03, relative_error = 4.53e-04
+iter =  6, absolute_error = 2.98e-06, relative_error = 6.12e-07
+</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>plot(u)
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code>[&lt;matplotlib.lines.Line2D at 0x7f38e89d5198&gt;]
+</code></pre></div>
+<p><img alt="png" src="../2_non_linear_poisson_newton_files/2_non_linear_poisson_newton_9_1.png" /></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a># Find max error
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>u_exact = Expression(
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    &#39;pow((pow(2, m+1)-1)*x[0] + 1, 1.0/(m+1)) - 1&#39;, m=m, degree=1)
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>u_e = interpolate(u_exact, V)
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>diff = numpy.abs(u_e.vector()[:] - u.vector()[:]).max()
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>print(&#39;Max error:{0:5.3e}&#39;.format(diff))
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code>Max error:4.014e-12
+</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>
+</span></code></pre></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../1_non_linear_poisson_picard/" class="btn btn-neutral float-left" title="1_non_linear_poisson_picard.md"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../3_non_linear_poisson_newton_manual_diff/" class="btn btn-neutral float-right" title="3_non_linear_poisson_newton_manual_diff.md">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; 2023 - 2024 ⦿ <a href="https://abhigupta.io">Abhinav Gupta</a></p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../1_non_linear_poisson_picard/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../3_non_linear_poisson_newton_manual_diff/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../javascripts/mathjax.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

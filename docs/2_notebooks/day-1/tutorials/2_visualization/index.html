@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>2_visualization.md - FEniCS Workshop</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "2_visualization.md";
+        var mkdocs_page_input_path = "2_notebooks/day-1/tutorials/2_visualization.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../..">
+          <img src="../../../../img/logo.svg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/1_motivation/">Motivation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/2_installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/3_quickstart/">Quickstart</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/4_faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1_linear_poisson/">1_linear_poisson.md</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">2_visualization.md</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#option-1-write-data-efficiently-using-with-syntax">Option 1: Write data efficiently using with syntax.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#option-2-use-this-to-write-data-when-dealing-with-timeseries">Option 2: Use this to write data when dealing with timeseries</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/tutorials/1_non_linear_poisson_picard/">1_non_linear_poisson_picard.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/tutorials/2_non_linear_poisson_newton/">2_non_linear_poisson_newton.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/tutorials/3_non_linear_poisson_newton_manual_diff/">3_non_linear_poisson_newton_manual_diff.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/tutorials/4_non_linear_poisson_newton_auto_diff/">4_non_linear_poisson_newton_auto_diff.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/tutorials/1_beam_bending/">1_beam_bending.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/tutorials/2_load_and_boundary_conditions/">2_load_and_boundary_conditions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/tutorials/3_solver/">3_solver.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/tutorials/1_hyper_elastic/">1_hyper_elastic.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/tutorials/2_load_displacement/">2_load_displacement.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/tutorials/1_thermoelasticity/">1_thermoelasticity.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/tutorials/2_multi_material/">2_multi_material.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/tutorials/3_transient_analysis/">3_transient_analysis.md</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Exercises</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../exercises/1_built_in_mesh/">1_built_in_mesh.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../exercises/2_boundary_conditions/">2_boundary_conditions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../exercises/3_expressions/">3_expressions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../exercises/4_spacially_varying_properties/">4_spacially_varying_properties.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../exercises/5_convergence/">5_convergence.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/exercises/1_2d_3d_domains/">1_2d_3d_domains.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/exercises/2_boundary_conditions/">2_boundary_conditions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/exercises/3_non_linearity_tolerances/">3_non_linearity_tolerances.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-2/exercises/4_manual_auto_differentiation/">4_manual_auto_differentiation.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/exercises/1_3d_uniaxial/">1_3d_uniaxial.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/exercises/2_plane_stress_strain/">2_plane_stress_strain.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/exercises/3_solver_design/">3_solver_design.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/exercises/1_mooney-rivlin/">1_mooney-rivlin.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/exercises/2_comparison/">2_comparison.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/exercises/1_bi_metallic_quasi_static/">1_bi_metallic_quasi_static.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/exercises/2_thermo_mechanical_transient/">2_thermo_mechanical_transient.md</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">FEniCS Workshop</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tutorials</li>
+      <li class="breadcrumb-item active">2_visualization.md</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="visualizing-simulation-results">Visualizing simulation results</h1>
+<p>Once the simulation is performed in FEniCS and the results are obtained, this tutorial will show you how to save the output in the XDMF file format. XDMF is ideal for storing large-scale scientific data, especially for finite element simulations, thanks to its flexibility and efficiency.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">dolfin</span> <span class="kn">import</span> <span class="o">*</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">num_elements</span> <span class="o">=</span> <span class="mi">30</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">mesh</span> <span class="o">=</span> <span class="n">IntervalMesh</span><span class="p">(</span><span class="n">num_elements</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">U</span> <span class="o">=</span> <span class="n">FunctionSpace</span><span class="p">(</span><span class="n">mesh</span><span class="p">,</span> <span class="s2">&quot;CG&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">u_D</span> <span class="o">=</span> <span class="n">Constant</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">boundary</span> <span class="o">=</span> <span class="n">CompiledSubDomain</span><span class="p">(</span><span class="s2">&quot;on_boundary&quot;</span><span class="p">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">bc</span> <span class="o">=</span> <span class="n">DirichletBC</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">u_D</span><span class="p">,</span> <span class="n">boundary</span><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">u</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">TrialFunction</span><span class="p">(</span><span class="n">U</span><span class="p">),</span> <span class="n">TestFunction</span><span class="p">(</span><span class="n">U</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">a</span> <span class="o">=</span> <span class="n">inner</span><span class="p">(</span><span class="n">grad</span><span class="p">(</span><span class="n">u</span><span class="p">),</span> <span class="n">grad</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="o">*</span> <span class="n">dx</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">f_expr</span> <span class="o">=</span> <span class="n">Expression</span><span class="p">(</span><span class="s2">&quot;pi*pi*sin(pi*x[0])&quot;</span><span class="p">,</span> <span class="n">pi</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">degree</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">L</span> <span class="o">=</span> <span class="n">f_expr</span> <span class="o">*</span> <span class="n">v</span> <span class="o">*</span> <span class="n">dx</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="n">u_sol</span> <span class="o">=</span> <span class="n">Function</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;field&quot;</span><span class="p">)</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">solve</span><span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">L</span><span class="p">,</span> <span class="n">u_sol</span><span class="p">,</span> <span class="n">bc</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="option-1-write-data-efficiently-using-with-syntax">Option 1: Write data efficiently using <code>with</code> syntax.</h2>
+<p>FEniCS provides us with an XDMFFile class for efficiently handling XDMF files and storing simulation results.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">with</span> <span class="n">XDMFFile</span><span class="p">(</span><span class="s2">&quot;output/result.xdmf&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">u_sol</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Let's break down the command step by step:</p>
+<ol>
+<li>
+<p><code>XDMFFile</code>: This is a class in FEniCS used to write simulation data to an XDMF file. XDMF is an XML-based file format commonly used to store scientific data, especially for finite element simulations.</p>
+</li>
+<li>
+<p><code>"output/result.xdmf"</code>: This is the file path and name where the XDMF file will be created or updated. In this case, the file will be named "result.xdmf" and will be located in the "output" directory (relative to the current working directory).</p>
+</li>
+<li>
+<p><code>with</code>: This keyword is used to define a context manager in Python. It ensures that resources associated with the context (in this case, the XDMFFile object) are properly managed and released when the block of code inside the <code>with</code> statement is executed.</p>
+</li>
+<li>
+<p><code>as outfile</code>: This assigns the XDMFFile object to the variable <code>outfile</code>, which can be used to interact with the file and write data.</p>
+</li>
+<li>
+<p><code>outfile.write(u_sol)</code>: This line of code writes the data <code>u_sol</code> to the XDMF file. <code>u_sol</code> is the variable containing the solution. Note that the name that is passed on to the variable during its creation is the name that will appear in the visualization tool paraview.</p>
+</li>
+</ol>
+<p>Overall, this command creates an XDMFFile object, opens the file "output/result.xdmf" for writing, writes the data contained in the <code>u_sol</code> variable to the file, and then automatically closes the file after the code block within the <code>with</code> statement is executed. This allows for efficient and controlled writing of simulation results to an XDMF file, which can later be visualized using tools like Paraview to analyze and interpret the simulation data.</p>
+<h2 id="option-2-use-this-to-write-data-when-dealing-with-timeseries">Option 2: Use this to write data when dealing with timeseries</h2>
+<p>In engineering, numerous problems demand the consideration of multiple variables and time-steps, which subsequently leads to the need for writing these variables to a file in a time series format. In such cases, FEniCS offers a convenient solution through the utilization of the XDMFFile class, facilitating efficient storage of simulation results.</p>
+<p><strong>We can access the <code>parameters</code> of the <code>XDMFFile</code> object to control its behaviour:</strong>
+- <strong>functions_share_mesh</strong>: Default is false, it controls whether all functions on a single time step share the same mesh. If true the files created will be smaller and also behave better in Paraview.
+- <strong>rewrite_function_mesh</strong>: Default settings is true, i.e, it controls whether the mesh will be rewritten every time step. If the mesh does not change this can be turned off to create smaller files. 
+- <strong>flush_output</strong>: Default is false, it controls the ability of Paraview to render during execution. If you are doing a time dependent analysis, setting it to true will allow you to visualize results during run.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">outfile</span> <span class="o">=</span> <span class="n">XDMFFile</span><span class="p">(</span><span class="s2">&quot;output/result.xdmf&quot;</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">outfile</span><span class="o">.</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;functions_share_mesh&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">outfile</span><span class="o">.</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;rewrite_function_mesh&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">outfile</span><span class="o">.</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;flush_output&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">time_step</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">u_sol</span><span class="p">,</span> <span class="n">time_step</span><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">outfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></code></pre></div>
+<p>At the end of the execution it is recommended to close the <code>XDMFFile</code> object.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../1_linear_poisson/" class="btn btn-neutral float-left" title="1_linear_poisson.md"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../../day-2/tutorials/1_non_linear_poisson_picard/" class="btn btn-neutral float-right" title="1_non_linear_poisson_picard.md">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; 2023 - 2024 ⦿ <a href="https://abhigupta.io">Abhinav Gupta</a></p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../1_linear_poisson/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../../day-2/tutorials/1_non_linear_poisson_picard/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../javascripts/mathjax.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

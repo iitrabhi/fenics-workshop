@@ -42,6 +42,36 @@ nav:
       - Quickstart: 1_introduction/3_quickstart.md
       - FAQ: 1_introduction/4_faq.md
   - Tutorials:
-      - Poissons Equation: 2_tutorials/1_linear_poisson.md
+      - 1_linear_poisson.md: 2_notebooks/day-1/tutorials/1_linear_poisson.md
+      - 2_visualization.md: 2_notebooks/day-1/tutorials/2_visualization.md
+      - 1_non_linear_poisson_picard.md: 2_notebooks/day-2/tutorials/1_non_linear_poisson_picard.md
+      - 2_non_linear_poisson_newton.md: 2_notebooks/day-2/tutorials/2_non_linear_poisson_newton.md
+      - 3_non_linear_poisson_newton_manual_diff.md: 2_notebooks/day-2/tutorials/3_non_linear_poisson_newton_manual_diff.md
+      - 4_non_linear_poisson_newton_auto_diff.md: 2_notebooks/day-2/tutorials/4_non_linear_poisson_newton_auto_diff.md
+      - 1_beam_bending.md: 2_notebooks/day-3/tutorials/1_beam_bending.md
+      - 2_load_and_boundary_conditions.md: 2_notebooks/day-3/tutorials/2_load_and_boundary_conditions.md
+      - 3_solver.md: 2_notebooks/day-3/tutorials/3_solver.md
+      - 1_hyper_elastic.md: 2_notebooks/day-4/tutorials/1_hyper_elastic.md
+      - 2_load_displacement.md: 2_notebooks/day-4/tutorials/2_load_displacement.md
+      - 1_thermoelasticity.md: 2_notebooks/day-5/tutorials/1_thermoelasticity.md
+      - 2_multi_material.md: 2_notebooks/day-5/tutorials/2_multi_material.md
+      - 3_transient_analysis.md: 2_notebooks/day-5/tutorials/3_transient_analysis.md
   - Exercises:
-      - API: 3_exercises/1_getting_started.md
+      - 1_built_in_mesh.md: 2_notebooks/day-1/exercises/1_built_in_mesh.md
+      - 2_boundary_conditions.md: 2_notebooks/day-1/exercises/2_boundary_conditions.md
+      - 3_expressions.md: 2_notebooks/day-1/exercises/3_expressions.md
+      - 4_spacially_varying_properties.md: 2_notebooks/day-1/exercises/4_spacially_varying_properties.md
+      - 5_convergence.md: 2_notebooks/day-1/exercises/5_convergence.md
+      - 1_2d_3d_domains.md: 2_notebooks/day-2/exercises/1_2d_3d_domains.md
+      - 2_boundary_conditions.md: 2_notebooks/day-2/exercises/2_boundary_conditions.md
+      - 3_non_linearity_tolerances.md: 2_notebooks/day-2/exercises/3_non_linearity_tolerances.md
+      - 4_manual_auto_differentiation.md: 2_notebooks/day-2/exercises/4_manual_auto_differentiation.md
+      - 1_3d_uniaxial.md: 2_notebooks/day-3/exercises/1_3d_uniaxial.md
+      - 2_plane_stress_strain.md: 2_notebooks/day-3/exercises/2_plane_stress_strain.md
+      - 3_solver_design.md: 2_notebooks/day-3/exercises/3_solver_design.md
+      - 1_mooney-rivlin.md: 2_notebooks/day-4/exercises/1_mooney-rivlin.md
+      - 2_comparison.md: 2_notebooks/day-4/exercises/2_comparison.md
+      - 1_bi_metallic_quasi_static.md: 2_notebooks/day-5/exercises/1_bi_metallic_quasi_static.md
+      - 2_thermo_mechanical_transient.md: 2_notebooks/day-5/exercises/2_thermo_mechanical_transient.md
+
+

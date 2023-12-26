@@ -63,6 +63,9 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
     - [Exercise 5-1:Bi-metallic quasi static analysis](src/day-5/exercises/1_bi_metallic_quasi_static.ipynb)
     - [Exercise 5-2:Transient thermo-mechanical analysis](src/day-5/exercises/2_thermo_mechanical_transient.ipynb) -->
 
+## Github Repo
+- [FEniCS Workshop](https://github.com/iitrabhi/fenics-workshop)
+
 ## Authors
 - [Abhinav Gupta](https://abhigupta.io)
 - [Ravindra Duddu](https://engineering.vanderbilt.edu/bio/ravindra-duddu)

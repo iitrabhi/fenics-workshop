@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "40a692c7cc097a58",
+        "id": "f90c5fef245b6ef6",
         "type": "tabs",
         "children": [
           {
-            "id": "eb1045d012fb1005",
+            "id": "c82a37f86754f76b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mkdocs/docs/index.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mkdocs/docs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mkdocs/docs/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "mkdocs/docs/index.md"
-              }
+              "state": {}
             }
           },
           {
@@ -175,8 +166,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "eb1045d012fb1005",
+  "active": "c82a37f86754f76b",
   "lastOpenFiles": [
+    "mkdocs/docs/index.md",
     "docs/css/fonts/lato-normal.woff2",
     "docs/css/fonts/lato-normal.woff",
     "docs/css/fonts/lato-normal-italic.woff2",
@@ -187,7 +179,6 @@
     "docs/css/fonts/lato-bold-italic.woff",
     "docs/css/fonts/fontawesome-webfont.woff2",
     "docs/css/fonts/fontawesome-webfont.woff",
-    "docs/css/fonts/fontawesome-webfont.ttf",
     "docs/css/fonts/fontawesome-webfont.svg",
     "docs/2_tutorials/1_linear_poisson_files/1_linear_poisson_6_1.png",
     "docs/2_tutorials/1_linear_poisson_files/1_linear_poisson_27_0.png",
@@ -206,7 +197,6 @@
     "mkdocs/docs/1_introduction/2_installation.md",
     "mkdocs/docs/1_introduction/3_quickstart.md",
     "mkdocs/docs/1_introduction/4_faq.md",
-    "mkdocs/docs/index.md",
     "admin/6_logs/2023-12-18.md",
     "admin/architecture.canvas",
     "documentation/docs/index.md",

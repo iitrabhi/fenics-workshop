@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>1_2d_3d_domains.md - FEniCS Workshop</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "1_2d_3d_domains.md";
+        var mkdocs_page_input_path = "2_notebooks/day-2/exercises/1_2d_3d_domains.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../..">
+          <img src="../../../../img/logo.svg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/1_motivation/">Motivation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/2_installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/3_quickstart/">Quickstart</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../1_introduction/4_faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/tutorials/1_linear_poisson/">1_linear_poisson.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/tutorials/2_visualization/">2_visualization.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/1_non_linear_poisson_picard/">1_non_linear_poisson_picard.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/2_non_linear_poisson_newton/">2_non_linear_poisson_newton.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/3_non_linear_poisson_newton_manual_diff/">3_non_linear_poisson_newton_manual_diff.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/4_non_linear_poisson_newton_auto_diff/">4_non_linear_poisson_newton_auto_diff.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/tutorials/1_beam_bending/">1_beam_bending.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/tutorials/2_load_and_boundary_conditions/">2_load_and_boundary_conditions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/tutorials/3_solver/">3_solver.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/tutorials/1_hyper_elastic/">1_hyper_elastic.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/tutorials/2_load_displacement/">2_load_displacement.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/tutorials/1_thermoelasticity/">1_thermoelasticity.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/tutorials/2_multi_material/">2_multi_material.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/tutorials/3_transient_analysis/">3_transient_analysis.md</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Exercises</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/1_built_in_mesh/">1_built_in_mesh.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/2_boundary_conditions/">2_boundary_conditions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/3_expressions/">3_expressions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/4_spacially_varying_properties/">4_spacially_varying_properties.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-1/exercises/5_convergence/">5_convergence.md</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">1_2d_3d_domains.md</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_boundary_conditions/">2_boundary_conditions.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_non_linearity_tolerances/">3_non_linearity_tolerances.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4_manual_auto_differentiation/">4_manual_auto_differentiation.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/exercises/1_3d_uniaxial/">1_3d_uniaxial.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/exercises/2_plane_stress_strain/">2_plane_stress_strain.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-3/exercises/3_solver_design/">3_solver_design.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/exercises/1_mooney-rivlin/">1_mooney-rivlin.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-4/exercises/2_comparison/">2_comparison.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/exercises/1_bi_metallic_quasi_static/">1_bi_metallic_quasi_static.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../day-5/exercises/2_thermo_mechanical_transient/">2_thermo_mechanical_transient.md</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">FEniCS Workshop</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Exercises</li>
+      <li class="breadcrumb-item active">1_2d_3d_domains.md</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="2d-and-3d-domains">2D and 3D domains</h1>
+<p>Implement the learning of exercise-1 from day-1 to solve the non-linear Poisson's equation on 2D and 3D domains. Feel free to create the mesh of your preference for the problem.</p>
+<ul>
+<li>Download and install Paraview.</li>
+<li>Name the fields to be visualized. (To visualize a function in Paraview you have to name it in FEniCS. The way to do that is use the command <code>v.rename("name", "label")</code>)</li>
+<li>Write to XDMF the error and the solution.</li>
+<li>Visualize the error and solution in Paraview</li>
+</ul>
+<p>Hint: Check day-1/tutorial-2 </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>from dolfin import *
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>import numpy
+</span></code></pre></div>
+<p>Update this mesh to a unit square mesh.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mesh = IntervalMesh(40, 0, 1)
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>V = FunctionSpace(mesh, &#39;Lagrange&#39;, 1)
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>left_boundary = CompiledSubDomain(&quot;on_boundary &amp;&amp; near(x[0],0)&quot;)
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>right_boundary = CompiledSubDomain(&quot;on_boundary &amp;&amp; near(x[0],1)&quot;)
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>bc_0 = DirichletBC(V, Constant(0.0), left_boundary)
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>bc_1 = DirichletBC(V, Constant(1.0), right_boundary)
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>bcs = [bc_0, bc_1]
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>m = 5
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>def q(u):
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    return (1+u)**m
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a># Define variational problem
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>v = TestFunction(V)
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>du = TrialFunction(V)
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>u = Function(V)  # most recently computed solution
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>F = inner(q(u)*nabla_grad(u), nabla_grad(v))*dx
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>J = derivative(F, u, du)
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a># Compute solution
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>problem = NonlinearVariationalProblem(F, u, bcs, J)
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>solver = NonlinearVariationalSolver(problem)
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>prm = solver.parameters
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>prm[&#39;newton_solver&#39;][&#39;absolute_tolerance&#39;] = 1E-5
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>prm[&#39;newton_solver&#39;][&#39;relative_tolerance&#39;] = 1E-5
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>prm[&#39;newton_solver&#39;][&#39;maximum_iterations&#39;] = 25
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>solver.solve()
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a># Find max error
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>u_exact = Expression(
+</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>    &#39;pow((pow(2, m+1)-1)*x[0] + 1, 1.0/(m+1)) - 1&#39;, m=m, degree=1)
+</span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>u_e = interpolate(u_exact, V)
+</span><span id="__span-2-39"><a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>diff = numpy.abs(u_e.vector()[:] - u.vector()[:]).max()
+</span><span id="__span-2-40"><a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a>print(&#39;Max error:{0:5.3e}&#39;.format(diff))
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code>Max error:2.167e-02
+</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>plot(u_e)
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code>[&lt;matplotlib.lines.Line2D at 0x7f38e1238828&gt;]
+</code></pre></div>
+<p><img alt="png" src="../1_2d_3d_domains_files/1_2d_3d_domains_5_1.png" /></p>
+<p>Export the error and solution vector to XDMF</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../../day-1/exercises/5_convergence/" class="btn btn-neutral float-left" title="5_convergence.md"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2_boundary_conditions/" class="btn btn-neutral float-right" title="2_boundary_conditions.md">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; 2023 - 2024 ⦿ <a href="https://abhigupta.io">Abhinav Gupta</a></p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../../day-1/exercises/5_convergence/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../2_boundary_conditions/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../javascripts/mathjax.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
