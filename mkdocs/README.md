@@ -1,3 +1,15 @@
+## Workflow
+
+This workflow is a series of steps that the developer follows to convert code and text from Jupyter notebooks into a live, interactive website, using specific tools and services for each step of the process.
+
+| Step | Description | In Folder |
+|------|-------------|-------------|
+| Code | The developer will create and work on all the Jupyter notebooks. They will be stored in a folder named `src`. | `src` |
+| Prepare mkdocs| The `mkdocs` folder contains files needed to build a website.  | `mkdocs` |
+| `*.ipynb -> *.md` | The developer uses a tool called `nbconvert` to turn the Jupyter notebooks (which might contain code, visualizations, and text) into markdown files.  | `src` -> `mkdocs` |
+| `*.md -> *.html`| With mkdocs, the markdown files are further converted into HTML, the standard language for creating web pages.  | `mkdocs` -> `docs` |
+| Publishing the Website | Once the website's HTML is ready, it is placed in the `docs` folder. GitHub Pages — a service provided by GitHub — can then access this folder to host and display the website online. | `docs` |
+| Admin Folder |Lastly, the `admin` folder is a separate place to keep additional files and folders that might be needed for organizational or administrative purposes but are not part of the actual website content. | `admin` | 
 
 ## Overview of Project Components
 
@@ -13,6 +25,7 @@ This file provides an overview of the different components in the project direct
 
 
 # How to develop
+For real time editing of the website
 ```bash
 mkdocs serve
 ```

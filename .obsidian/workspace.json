@@ -11,8 +11,13 @@
             "id": "c82a37f86754f76b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "mkdocs/docs/1_introduction/1_motivation.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "mkdocs/docs/1_introduction/1_motivation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "mkdocs/docs/1_introduction/1_motivation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "mkdocs/docs/1_introduction/1_motivation.md"
+              }
             }
           },
           {
@@ -143,7 +152,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -168,27 +179,28 @@
   },
   "active": "c82a37f86754f76b",
   "lastOpenFiles": [
+    "docs/2_notebooks/day-5/tutorials/3_transient_analysis_files/3_transient_analysis_9_0.png",
+    "docs/2_notebooks/day-5/tutorials/3_transient_analysis/index.html",
+    "docs/2_notebooks/day-5/tutorials/2_multi_material_files/2_multi_material_9_1.png",
+    "docs/2_notebooks/day-5/tutorials/2_multi_material_files/2_multi_material_18_2.png",
+    "docs/2_notebooks/day-5/tutorials/2_multi_material/index.html",
+    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity_files/1_thermoelasticity_9_0.png",
+    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity_files/1_thermoelasticity_8_0.png",
+    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity_files/1_thermoelasticity_3_0.png",
+    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity/index.html",
+    "docs/2_notebooks/day-5/exercises/2_thermo_mechanical_transient/index.html",
+    "docs/2_notebooks/day-5/exercises/1_bi_metallic_quasi_static/index.html",
+    "docs/2_notebooks/day-4/tutorials/2_load_displacement_files/2_load_displacement_4_1.png",
+    "docs/2_notebooks/day-4/tutorials/2_load_displacement_files/2_load_displacement_3_1.png",
+    "docs/2_notebooks/day-4/tutorials/2_load_displacement/index.html",
+    "docs/2_notebooks/day-4/tutorials/1_hyper_elastic_files/1_hyper_elastic_6_2.png",
+    "docs/2_notebooks/day-4/tutorials/1_hyper_elastic/index.html",
+    "docs/2_notebooks/day-4/exercises/2_comparison_files/2_comparison_19_1.png",
+    "docs/2_notebooks/day-4/exercises/2_comparison_files/2_comparison_14_1.png",
+    "docs/2_notebooks/day-4/exercises/2_comparison/index.html",
+    "docs/2_notebooks/day-4/exercises/1_mooney-rivlin/index.html",
+    "docs/2_notebooks/day-3/tutorials/3_solver/index.html",
     "mkdocs/docs/index.md",
-    "docs/css/fonts/lato-normal.woff2",
-    "docs/css/fonts/lato-normal.woff",
-    "docs/css/fonts/lato-normal-italic.woff2",
-    "docs/css/fonts/lato-normal-italic.woff",
-    "docs/css/fonts/lato-bold.woff2",
-    "docs/css/fonts/lato-bold.woff",
-    "docs/css/fonts/lato-bold-italic.woff2",
-    "docs/css/fonts/lato-bold-italic.woff",
-    "docs/css/fonts/fontawesome-webfont.woff2",
-    "docs/css/fonts/fontawesome-webfont.woff",
-    "docs/css/fonts/fontawesome-webfont.svg",
-    "docs/2_tutorials/1_linear_poisson_files/1_linear_poisson_6_1.png",
-    "docs/2_tutorials/1_linear_poisson_files/1_linear_poisson_27_0.png",
-    "docs/2_tutorials/1_linear_poisson_files/1_linear_poisson_21_1.png",
-    "docs/2_tutorials/1_linear_poisson_files/1_linear_poisson_17_1.png",
-    "docs/img/logo.svg",
-    "docs/attachments/Pasted image 20231219133930.png",
-    "mkdocs/site/css/fonts/fontawesome-webfont.svg",
-    "mkdocs/site/img/logo.svg",
-    "mkdocs/site/2_tutorials/1_linear_poisson_files/1_linear_poisson_21_1.png",
     "mkdocs/docs/2_tutorials/1_linear_poisson.md",
     "docs/2_tutorials/1_linear_poisson.md",
     "src/day-1/tutorials/1_linear_poisson.md",
