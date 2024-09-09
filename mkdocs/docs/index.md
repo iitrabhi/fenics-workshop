@@ -7,6 +7,8 @@ The course materials, including tutorials and exercises, were created as part of
 
 The `tutorials` are comprehensive notebooks that demonstrate how to approach different types of problems using FEniCS. On the other hand, the `exercises` are meant to be interactive, and they encourage you to expand the notebooks by adding new functionalities. This way, you can develop your expertise in using FEniCS.
 
+
+
 ## What is FEniCS?
 FEniCS is a high-performance computing (HPC) capable tool that efficiently utilizes supercomputers and high-performance clusters to solve complex scientific problems. It supports parallel computing, JIT compilation, and integrates with PETSc and MPI for scalability and performance. Its HPC capabilities enable researchers to perform large-scale simulations and analyses effectively.
 
@@ -15,8 +17,8 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
 
 
 
-<!-- ## Contents -->
-<!-- - [Instructions for installing FEniCS](install-instructions.ipynb)
+## Contents 
+ [Instructions for installing FEniCS](install-instructions.ipynb)
 - Day 1
   - Tutorials
     - [Tutorial 1-1: Solving linear Poisson's equation](src/day-1/tutorials/1_linear_poisson.ipynb)
@@ -61,7 +63,7 @@ FEniCS is a high-performance computing (HPC) capable tool that efficiently utili
     - [Tutorial 5-3:Transient analysis](src/day-5/tutorials/3_transient_analysis.ipynb)
   - Exercise
     - [Exercise 5-1:Bi-metallic quasi static analysis](src/day-5/exercises/1_bi_metallic_quasi_static.ipynb)
-    - [Exercise 5-2:Transient thermo-mechanical analysis](src/day-5/exercises/2_thermo_mechanical_transient.ipynb) -->
+    - [Exercise 5-2:Transient thermo-mechanical analysis](src/day-5/exercises/2_thermo_mechanical_transient.ipynb) 
 
 ## Github Repo
 - [FEniCS Workshop](https://github.com/iitrabhi/fenics-workshop)

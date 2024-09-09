@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mkdocs/docs/1_introduction/1_motivation.md",
+                "file": "mkdocs/docs/index.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mkdocs/docs/1_introduction/1_motivation.md",
+                "file": "mkdocs/docs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mkdocs/docs/1_introduction/1_motivation.md",
+                "file": "mkdocs/docs/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mkdocs/docs/1_introduction/1_motivation.md"
+                "file": "mkdocs/docs/index.md"
               }
             }
           },
@@ -179,6 +179,9 @@
   },
   "active": "c82a37f86754f76b",
   "lastOpenFiles": [
+    "mkdocs/docs/1_introduction/2_installation.md",
+    "mkdocs/docs/1_introduction/3_quickstart.md",
+    "mkdocs/docs/1_introduction/1_motivation.md",
     "docs/2_notebooks/day-5/tutorials/3_transient_analysis_files/3_transient_analysis_9_0.png",
     "docs/2_notebooks/day-5/tutorials/3_transient_analysis/index.html",
     "docs/2_notebooks/day-5/tutorials/2_multi_material_files/2_multi_material_9_1.png",
@@ -196,7 +199,6 @@
     "docs/2_notebooks/day-4/tutorials/1_hyper_elastic_files/1_hyper_elastic_6_2.png",
     "docs/2_notebooks/day-4/tutorials/1_hyper_elastic/index.html",
     "docs/2_notebooks/day-4/exercises/2_comparison_files/2_comparison_19_1.png",
-    "docs/2_notebooks/day-4/exercises/2_comparison_files/2_comparison_14_1.png",
     "docs/2_notebooks/day-4/exercises/2_comparison/index.html",
     "docs/2_notebooks/day-4/exercises/1_mooney-rivlin/index.html",
     "docs/2_notebooks/day-3/tutorials/3_solver/index.html",
@@ -205,9 +207,6 @@
     "docs/2_tutorials/1_linear_poisson.md",
     "src/day-1/tutorials/1_linear_poisson.md",
     "mkdocs/docs/3_exercises/1_getting_started.md",
-    "mkdocs/docs/1_introduction/1_motivation.md",
-    "mkdocs/docs/1_introduction/2_installation.md",
-    "mkdocs/docs/1_introduction/3_quickstart.md",
     "mkdocs/docs/1_introduction/4_faq.md",
     "admin/6_logs/2023-12-18.md",
     "admin/architecture.canvas",
