@@ -13,10 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mkdocs/docs/index.md",
+                "file": "mkdocs/docs/2_notebooks/day-1/tutorials/1_linear_poisson.md",
                 "mode": "source",
                 "backlinks": false,
-                "source": false
+                "source": true
               }
             }
           }
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5086555480957
+    "width": 395.5
   },
   "right": {
     "id": "591fb1ca599ec2fe",
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mkdocs/docs/index.md",
+                "file": "mkdocs/docs/2_notebooks/day-1/tutorials/1_linear_poisson.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mkdocs/docs/index.md",
+                "file": "mkdocs/docs/2_notebooks/day-1/tutorials/1_linear_poisson.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mkdocs/docs/index.md"
+                "file": "mkdocs/docs/2_notebooks/day-1/tutorials/1_linear_poisson.md"
               }
             }
           },
@@ -179,52 +179,53 @@
   },
   "active": "c82a37f86754f76b",
   "lastOpenFiles": [
-    "mkdocs/docs/1_introduction/2_installation.md",
+    "docs/sitemap.xml.gz",
+    "docs/sitemap.xml",
+    "docs/search.html",
+    "docs/search/main.js",
+    "docs/search/lunr.js",
+    "docs/search/worker.js",
+    "docs/search/search_index.json",
+    "docs/search",
+    "docs/js/theme.js",
+    "docs/js/jquery-3.6.0.min.js",
+    "docs/js/theme_extra.js",
+    "docs/img/logo.svg",
+    "docs/img/logoa.svg",
+    "docs/css/fonts/fontawesome-webfont.svg",
+    "docs/attachments/Pasted image 20231219133930.png",
+    "docs/2_notebooks/day-1/tutorials/1_linear_poisson_files/1_linear_poisson_6_1.png",
+    "docs/2_notebooks/day-1/tutorials/1_linear_poisson_files/1_linear_poisson_27_0.png",
+    "docs/2_notebooks/day-1/tutorials/1_linear_poisson_files/1_linear_poisson_17_1.png",
+    "docs/2_notebooks/day-1/tutorials/1_linear_poisson_files/1_linear_poisson_21_1.png",
+    "docs/2_notebooks/day-2/tutorials/4_non_linear_poisson_newton_auto_diff_files/4_non_linear_poisson_newton_auto_diff_8_1.png",
+    "docs/2_notebooks/day-2/tutorials/2_non_linear_poisson_newton_files/2_non_linear_poisson_newton_1_0.png",
+    "mkdocs/docs/2_notebooks/day-5/tutorials/1_thermoelasticity.md",
+    "mkdocs/docs/2_notebooks/day-5/tutorials/3_transient_analysis.md",
+    "mkdocs/docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions.md",
+    "mkdocs/docs/2_notebooks/day-3/tutorials/1_beam_bending.md",
+    "mkdocs/docs/2_notebooks/day-2/tutorials/4_non_linear_poisson_newton_auto_diff.md",
+    "mkdocs/docs/2_notebooks/day-2/tutorials/3_non_linear_poisson_newton_manual_diff.md",
+    "mkdocs/docs/2_notebooks/day-2/tutorials/2_non_linear_poisson_newton.md",
+    "mkdocs/docs/2_notebooks/day-2/tutorials/1_non_linear_poisson_picard.md",
+    "mkdocs/docs/2_notebooks/day-1/tutorials/1_linear_poisson.md",
     "mkdocs/docs/1_introduction/3_quickstart.md",
+    "mkdocs/docs/1_introduction/2_installation.md",
     "mkdocs/docs/1_introduction/1_motivation.md",
-    "docs/2_notebooks/day-5/tutorials/3_transient_analysis_files/3_transient_analysis_9_0.png",
-    "docs/2_notebooks/day-5/tutorials/3_transient_analysis/index.html",
-    "docs/2_notebooks/day-5/tutorials/2_multi_material_files/2_multi_material_9_1.png",
-    "docs/2_notebooks/day-5/tutorials/2_multi_material_files/2_multi_material_18_2.png",
-    "docs/2_notebooks/day-5/tutorials/2_multi_material/index.html",
-    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity_files/1_thermoelasticity_9_0.png",
-    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity_files/1_thermoelasticity_8_0.png",
-    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity_files/1_thermoelasticity_3_0.png",
-    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity/index.html",
-    "docs/2_notebooks/day-5/exercises/2_thermo_mechanical_transient/index.html",
-    "docs/2_notebooks/day-5/exercises/1_bi_metallic_quasi_static/index.html",
-    "docs/2_notebooks/day-4/tutorials/2_load_displacement_files/2_load_displacement_4_1.png",
-    "docs/2_notebooks/day-4/tutorials/2_load_displacement_files/2_load_displacement_3_1.png",
-    "docs/2_notebooks/day-4/tutorials/2_load_displacement/index.html",
-    "docs/2_notebooks/day-4/tutorials/1_hyper_elastic_files/1_hyper_elastic_6_2.png",
-    "docs/2_notebooks/day-4/tutorials/1_hyper_elastic/index.html",
-    "docs/2_notebooks/day-4/exercises/2_comparison_files/2_comparison_19_1.png",
-    "docs/2_notebooks/day-4/exercises/2_comparison/index.html",
-    "docs/2_notebooks/day-4/exercises/1_mooney-rivlin/index.html",
-    "docs/2_notebooks/day-3/tutorials/3_solver/index.html",
-    "mkdocs/docs/index.md",
-    "mkdocs/docs/2_tutorials/1_linear_poisson.md",
-    "docs/2_tutorials/1_linear_poisson.md",
-    "src/day-1/tutorials/1_linear_poisson.md",
-    "mkdocs/docs/3_exercises/1_getting_started.md",
-    "mkdocs/docs/1_introduction/4_faq.md",
-    "admin/6_logs/2023-12-18.md",
+    "mkdocs/docs/2_notebooks/day-5/exercises/2_thermo_mechanical_transient.md",
+    "mkdocs/docs/2_notebooks/day-5/exercises/1_bi_metallic_quasi_static.md",
+    "mkdocs/docs/2_notebooks/day-4/exercises/2_comparison.md",
+    "mkdocs/docs/2_notebooks/day-4/exercises/1_mooney-rivlin.md",
+    "mkdocs/docs/2_notebooks/day-3/exercises/3_solver_design.md",
+    "mkdocs/docs/2_notebooks/day-3/exercises/2_plane_stress_strain.md",
+    "mkdocs/docs/2_notebooks/day-3/exercises/1_3d_uniaxial.md",
+    "mkdocs/docs/2_notebooks/day-2/exercises/4_manual_auto_differentiation.md",
+    "mkdocs/docs/2_notebooks/day-2/exercises/3_non_linearity_tolerances.md",
+    "mkdocs/docs/2_notebooks/day-2/exercises/2_boundary_conditions.md",
+    "mkdocs/docs/2_notebooks/day-2/exercises/1_2d_3d_domains.md",
+    "mkdocs/docs/2_notebooks/day-1/exercises/5_convergence.md",
+    "mkdocs/docs/2_notebooks/day-1/exercises/4_spacially_varying_properties.md",
     "admin/architecture.canvas",
-    "documentation/docs/index.md",
-    "documentation/docs/2_theory/1_getting_started.md",
-    "README.md",
-    "documentation/docs/4_examples/1_examples.md",
-    "documentation/docs/3_api/1_api.md",
-    "documentation/docs/1_introduction/4_contributing.md",
-    "documentation/docs/1_introduction/3_quickstart.md",
-    "documentation/docs/1_introduction/2_installation.md",
-    "documentation/docs/1_introduction/1_motivation.md",
-    "documentation/docs/1_introduction/contributing.md",
-    "documentation/docs/1_introduction/quickstart.md",
-    "documentation/docs/1_introduction/installation.md",
-    "documentation/docs/1_introduction/motivation.md",
-    "documentation/docs/api.md",
-    "documentation/docs/1_usage.md",
     "plan.canvas",
     "3_our_implementation/2_paper_problems/1_calibration/Untitled.canvas",
     "4_latex_source/paper structure.canvas"

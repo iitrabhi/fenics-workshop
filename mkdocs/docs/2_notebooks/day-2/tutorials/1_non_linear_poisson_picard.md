@@ -1,8 +1,8 @@
 # Nonlinear Poisson equation
 
-$$-div(q(u)*\Delta(u)) = 0,$$
-$$u = 0\text{ at }x=0, u=1\text{ at }x=1$$
-$$q(u) = (1+u)^m$$
+$$\begin{split}-\nabla . (q(u)\Delta(u)) &= 0,\\
+u &= 0\text{ at }x=0, u=1\text{ at }x=1\\
+q(u) &= (1+u)^m\end{split}$$
 
 Solution method: Picard iteration (successive substitutions).
 

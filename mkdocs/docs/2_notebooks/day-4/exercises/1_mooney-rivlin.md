@@ -48,7 +48,7 @@ Ic = tr(C)
 J = det(F)
 ```
 
-https://iopscience.iop.org/article/10.1088/1742-6596/1741/1/012047/pdf
+<https://iopscience.iop.org/article/10.1088/1742-6596/1741/1/012047/pdf>
 
 
 ```python

@@ -1,6 +1,9 @@
 ## Prerequisites
 
-To follow along with the examples, you need to install docker on your system. You need Windows 10/11 Education or Professional for this to work. This does not work on Windows 10/11 Home.
+For this course knowledge of stress tensor, strong and weak form of equations,
+function spaces and familiarity with python/jupyter notebooks is recommended.
+
+And to follow along with the examples, you need to install docker on your system. You need Windows 10/11 Education or Professional for this to work. This does not work on Windows 10/11 Home.
 
 * [Docker](https://www.docker.com/products/docker-desktop)
 * [Paraview](https://www.paraview.org/download/)
@@ -16,6 +19,7 @@ Once the docker system is installed and running, open CMDER/terminal and run:
 ```
 docker pull iitrabhi/fenics_notebook
 ```
+
 
 ## Running
 
@@ -33,6 +37,7 @@ docker run -p 8888:8888 -v D:\Codes:/root/ -w /root/ iitrabhi/fenics_notebook
 
 Once you run the above command in `cmder,` you will get a URL starting with `http://127.0.0.1:8888/lab`. Press Control and click on the URL to open a new Jupyter Notebook.
 
+To make the startup easier, you may also put the above line of code in a `start_up.bat` file after changing the `D:\Codes` to your own local directory. Also make sure that your file path has no spaces i.e. please do not name your folder with spaces. You may use `_` to fill in the spaces.
 ## If you have Windows home
 
 You can use google collab to run FEniCS on the cloud. [Open Collab](https://research.google.com/colaboratory/), upload your notebook and paste the following in the first cell of your notebook.

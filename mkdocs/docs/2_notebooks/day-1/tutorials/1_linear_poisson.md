@@ -75,7 +75,10 @@ The line of code `U = FunctionSpace(mesh, "CG", 1)` in FEniCS creates a function
 U = FunctionSpace(mesh, "CG", 1)
 ```
 
+- In above code **'CG'** stands for **Continuous Galerkin** or **Lagrange elements** continuous across element boundaries.
+- **'1'** indicates that basic functions are linear i.e. the solution is approximated by piecewise linear function. If it is change to **2** the basis functions would be quadratic.
 ## Step 4: Define boundary condition
+Please read [this article](https://www.resolvedanalytics.com/cfd/what-is-a-neumann-boundary-condition) beforehand if you have no idea about Dirichlet or Neumann boundary condition.
 
 We create a `DirichletBC` object (`bc`) that associates the function space `U` with the boundary condition `u_D` and the subdomain `boundary`. This means that the solution function `u_sol` will have the value `0.0` on the boundary of the domain during the solution of the PDE
 .
@@ -87,10 +90,24 @@ boundary = CompiledSubDomain("on_boundary")
 bc = DirichletBC(U, u_D, boundary)
 ```
 
+- **Constant(0.0)** just defines a constant value 
+- **CompiledSubDomain** is a FEniCS class that allows the definition of a subdomain or part of the domain. It compiles the condition making it more efficient for large-scale problems or complex geometries.
+- **on_boundary** is built in condition in FEniCS that returns 'True' for all points on the boundary of the domain and 'False' on inside the domain.
+
+So, all the code does is create a subdomain names **boundary** that corresponds to all points on the boundary of the mesh. 
+- In 1D boundary would consist of two end points of the interval. For $[a,b]$, the boundary will be at **a** and **b**
+- In 2D however, boundaries will be edges i.e lines and it goes on like that for 3D where planes will form the boundaries.
+
+
+And finally, the last line **bc = DirichletBC(U, u_D, boundary)** will apply the value of **u_D** to the **boundary** that has been defined.
+
+
 ## Step 5: Define weak form
 
-$$a(u, v) = L(v) \quad \forall \ v \in V,$$
-$$\begin{split}a(u, v) &= \int_{\Omega} \nabla u \cdot \nabla v \, {\rm d} x, \\
+Please refer [here](https://fenicsproject.org/pub/tutorial/sphinx1/._ftut1003.html) to know how the weak form was derived.
+
+$$\begin{split}a(u, v) &= L(v) \quad \forall \ v \in V, \\
+a(u, v) &= \int_{\Omega} \nabla u \cdot \nabla v \, {\rm d} x, \\
 L(v)    &= \int_{\Omega} f v \, {\rm d} x.\end{split}$$
 
 
@@ -104,7 +121,7 @@ a = inner(grad(u), grad(v)) * dx
 
 For this tutorial, let's choose a simple manufactured solution. We will solve the Poisson's equation in 1D:
 
-$$-\Delta u(x) = f(x), 0 < x < 1,$$
+$$-\nabla^2 u(x) = f(x), 0 < x < 1,$$
 
 where u(x) is the unknown function, and f(x) is the right-hand side. We will choose an analytical solution u_exact(x) that satisfies the above equation.
 
@@ -114,7 +131,7 @@ $$u_{exact}(x) = sin(\pi x)$$
 
 and calculate the corresponding f(x):
 
-$$f(x) = -\Delta u_{exact}(x) = \pi^2  sin(\pi x)$$
+$$f(x) = -\nabla^2 u_{exact}(x) = \pi^2  sin(\pi x)$$
 
 
 
@@ -125,9 +142,7 @@ f_expr = Expression("pi*pi*sin(pi*x[0])", pi=np.pi, degree=2)
 ### Visualize Expression 
 In the given code snippet:
 
-1. `V = FunctionSpace(mesh, 'CG', 1)`: We create a function space `V` defined on the provided mesh. The function space is based on continuous Galerkin (CG) elements and uses a polynomial degree of 1 for the basis functions. This means that functions in `V` will be represented as piecewise linear continuous functions over each element of the mesh.
-
-2. `f_val = project(f_expr, V)`: We use the `project` function to interpolate the expression `f_expr` onto the function space `V`. This creates a new function `f_val` that represents the projection of the expression `f_expr` onto the space `V`. The `project` function is useful when we want to create functions from `Expression` and visualize them.
+1. `f_val = project(f_expr, V)`: We use the `project` function to interpolate the expression `f_expr` onto the function space `V`. This creates a new function `f_val` that represents the projection of the expression `f_expr` onto the space `V`. The `project` function is useful when we want to create functions from `Expression` and visualize them.
 
 
 
@@ -241,7 +256,9 @@ plt.show()
 ![png](1_linear_poisson_files/1_linear_poisson_27_0.png)
     
 
+```
 !pip install plotly
+```
 
 ```python
 import plotly.express as px
@@ -268,6 +285,16 @@ fig.update_layout(
 
 # Show the Plotly Express figure
 fig.show()
+```
+
+If you want to save the image
+
+```
+!pip install kaleido
+```
+
+```python
+fig.write_image("img.png") 
 ```
 
 

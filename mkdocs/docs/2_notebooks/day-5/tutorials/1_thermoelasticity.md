@@ -28,8 +28,10 @@ def top(x, on_boundary):
 Because of the weak coupling discussed before, the thermal and mechanical problem can be solved separately. As a result, we don't need to resort to Mixed FunctionSpaces but can just define separately both problems.
 
 
-The temperature is solution to the following equation 
-$$\text{div}(k\nabla T) = 0$$
+The temperature is solution to the following equation
+
+$$\nabla .(k\nabla T) = 0$$
+
 where $k$ is the thermal conductivity (here we have no heat source). Since $k$ is assumed to be homogeneous, it will not influence the solution. We therefore obtain a standard Poisson equation without forcing terms. Its formulation and resolution in FEniCS is quite standard with the temperature variation $\Delta T$ as the main unknown.
 
 
@@ -57,7 +59,7 @@ plt.show()
     
 
 
-## Mecanical problem
+## Mechanical problem
 
 The linearized thermoelastic constitutive equation is given by:
 

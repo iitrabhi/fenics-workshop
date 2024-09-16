@@ -1,10 +1,10 @@
 # Nonlinear Poisson equation 
 
-$$-div(q(u)*\Delta(u)) = 0,$$
-$$u = 0\text{ at }x=0, u=1\text{ at }x=1$$
-$$q(u) = (1+u)^m$$
+$$\begin{split}-\nabla . (q(u)\Delta(u)) &= 0,\\
+u &= 0\text{ at }x=0, u=1\text{ at }x=1\\
+q(u) &= (1+u)^m\end{split}$$
 
-Solution method: Newton method
+Solution method: Newton iteration (Manual Differentiation).
 
 Newton iteration is a more sophisticated method for solving nonlinear equations and systems. It is based on linearizing the original problem around an initial guess and then iteratively improving the solution by solving linear approximations of the problem.
 

@@ -43,7 +43,7 @@ def elasticity_problem(num_ele_along_depth=30):
     return problem, u
 ```
 
-https://fenicsproject.org/pub/tutorial/html/._ftut1017.html
+<https://fenicsproject.org/pub/tutorial/html/._ftut1017.html>
 |Solver | Description | | | Preconditioner    |Description   |
 | -- |--|--|--|--|--|
 | bicgstab       |  Biconjugate gradient stabilized method| | | amg              |  Algebraic multigrid|

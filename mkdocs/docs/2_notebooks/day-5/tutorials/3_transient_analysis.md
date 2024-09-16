@@ -10,12 +10,13 @@ $$
 
 where $u(x, t)$ is the temperature distribution at position $x$ and time $t$, $k$ is the thermal conductivity, and $f(x, t)$ represents any source term in the equation. For this analysis, we consider a 1D domain $[0, L]$.
 
-https://fenicsproject.org/pub/tutorial/html/._ftut1006.html
+<https://fenicsproject.org/pub/tutorial/html/._ftut1006.html>
 
 
 
 ```python
 from fenics import *
+from matplotlib import pyplot as plt
 
 # Create a mesh
 L = 1.0  # Length of the domain
