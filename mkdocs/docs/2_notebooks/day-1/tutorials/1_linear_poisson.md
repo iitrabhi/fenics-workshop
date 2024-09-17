@@ -1,4 +1,4 @@
-# Poissons Equation
+## Poissons Equation
 
 Welcome to this FEniCS tutorial, where we will explore how to verify the accuracy of a Poisson's equation solver using the "manufactured solution" technique. FEniCS is a powerful open-source finite element library for solving partial differential equations (PDEs), widely used for scientific computing and simulation.
 
@@ -139,7 +139,7 @@ $$f(x) = -\nabla^2 u_{exact}(x) = \pi^2  sin(\pi x)$$
 f_expr = Expression("pi*pi*sin(pi*x[0])", pi=np.pi, degree=2)
 ```
 
-### Visualize Expression 
+## Visualize Expression 
 In the given code snippet:
 
 1. `f_val = project(f_expr, V)`: We use the `project` function to interpolate the expression `f_expr` onto the function space `V`. This creates a new function `f_val` that represents the projection of the expression `f_expr` onto the space `V`. The `project` function is useful when we want to create functions from `Expression` and visualize them.

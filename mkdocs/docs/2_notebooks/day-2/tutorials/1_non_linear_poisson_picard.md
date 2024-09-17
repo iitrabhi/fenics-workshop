@@ -1,4 +1,4 @@
-# Nonlinear Poisson equation
+## Nonlinear Poisson equation
 
 $$\begin{split}-\nabla . (q(u)\Delta(u)) &= 0,\\
 u &= 0\text{ at }x=0, u=1\text{ at }x=1\\
@@ -59,10 +59,10 @@ L = f*v*dx
 
 Absolute tolerance and relative tolerance are two different concepts used to define the acceptable level of error or difference between two values when comparing them, especially in numerical computations, algorithms, and simulations.
 
-1. Absolute Tolerance:
+## Absolute Tolerance:
 Absolute tolerance is a fixed value that represents the maximum allowable difference between two values. It is independent of the magnitude or scale of the values being compared. If the absolute difference between the two values is smaller than the absolute tolerance, they are considered to be equal or within the acceptable range.
 
-1. Relative Tolerance:
+## Relative Tolerance:
 Relative tolerance, on the other hand, takes into account the magnitude or scale of the values being compared. It defines an acceptable percentage or fraction of relative difference between two values. 
 
 The idea is that the relative tolerance allows for more significant differences between large values and smaller differences between small values. This is especially useful when dealing with numbers of varying magnitudes.

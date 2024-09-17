@@ -1,4 +1,4 @@
-# Nonlinear Poisson equation 
+## Nonlinear Poisson equation 
 
 $$\begin{split}-\nabla . (q(u)\Delta(u)) &= 0,\\
 u &= 0\text{ at }x=0, u=1\text{ at }x=1\\

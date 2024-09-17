@@ -1,4 +1,4 @@
-# Convergence
+## Convergence
 
 Convergence analysis in the FEM is a critical process that evaluates the accuracy and reliability of numerical solutions to PDEs. It involves discretizing the continuous problem into a mesh of elements and studying how the numerical solution converges to the exact solution as the mesh is refined. 
 

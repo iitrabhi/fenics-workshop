@@ -1,11 +1,11 @@
-# Automatic Differentiation
+## Automatic Differentiation
 Automatic Differentiation (AD) is a powerful computational tool that has revolutionized various fields, particularly in mathematics, physics, engineering, and machine learning. It provides a systematic and efficient way to compute derivatives of complex mathematical functions, allowing us to effortlessly obtain accurate and reliable gradients. This capability of AD brings a multitude of benefits, enabling faster and more robust optimization, enhancing the performance of machine learning models, and facilitating the solution of intricate differential equations.
 
 In this exercise you have to use both manual differentiation and automatic differentiation to find the solution of the following Poisson's equation.
 
-$$-div(q(u)*\Delta(u)) = 0,$$
-$$u = 0\text{ at }x=0, u=1\text{ at }x=1$$
-$$q(u) = (1+2u+4u^3)$$
+$$\begin{split}-div(q(u)*\Delta(u)) &= 0,\\
+u &= 0\text{ at }x=0, u=1\text{ at }x=1\\
+q(u) &= (1+2u+4u^3)\end{split}$$
 
 
 ```

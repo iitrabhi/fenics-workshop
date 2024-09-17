@@ -1,4 +1,4 @@
-# 2D and 3D domains
+## 2D and 3D domains
 
 Implement the learning of exercise-1 from day-1 to solve the non-linear Poisson's equation on 2D and 3D domains. Feel free to create the mesh of your preference for the problem.
 

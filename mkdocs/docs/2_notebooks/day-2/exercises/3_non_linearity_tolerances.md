@@ -1,4 +1,4 @@
-# Tolerances and convergence
+## Tolerances and convergence
 
 In numerical methods, solving non-linear problems poses unique challenges due to their intrinsic complexity. Solver design become crucial aspect to consider while tackling these problems, as they govern the accuracy and reliability of the obtained solutions. 
 

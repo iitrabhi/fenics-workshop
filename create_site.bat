@@ -1,7 +1,6 @@
 @echo off
 echo removing old files..
-rm -r docs/
-mkdir docs
+rm -r docs/*
 
 echo building new...
 mkdocs build --config-file mkdocs/mkdocs.yml

@@ -1,4 +1,4 @@
-# 3D Uniaxial bar
+## 3D Uniaxial bar
 
 The objective of this exercise is to implement a 3D finite element analysis (FEA) program using FEniCS. You are required to create a FEniCS code that performs the analysis, solve for the displacements and stresses in the bar, and visualize the results.
 

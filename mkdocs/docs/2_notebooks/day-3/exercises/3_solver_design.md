@@ -1,4 +1,4 @@
-# Solver design
+## Solver design
 
 The success of tackling complex problems often relies on the effectiveness of the solver employed. While formulating the mathematical model is crucial, paying attention to the design of an efficient and accurate solver is equally vital, as it directly impacts the quality and reliability of the results you obtain.
 
@@ -80,7 +80,7 @@ print("The minimum displacement is: {0:6.3e} m".format(u.vector().min()))
     The minimum displacement is: -4.712e-04 m
 
 
-## The minimum displacement is: -4.71e-04 m
+# The minimum displacement is: -4.71e-04 m
 - For each parameter variation, record the solver parameters used and the corresponding solution time and differnce in the minimum displacement.
 - Compare the results obtained with different solver parameters.
 - Analyze how the solution time and accuracy are affected by varying the solver parameters.

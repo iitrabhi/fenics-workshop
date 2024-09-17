@@ -1,4 +1,4 @@
-# Spacially varying properties
+## Spacially varying properties
 
 With FEniCS, researchers and engineers can model and simulate problems with spatially varying material properties efficiently and accurately. We can use the Expression class provided by FEniCS to represent the material property as a function of the co-ordinate of the mesh.
 

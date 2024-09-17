@@ -1,4 +1,4 @@
-# Loads and boundary conditions
+## Loads and boundary conditions
 
 
 The preceding tutorial focused on body forces. However, in situations where you need to apply traction force or a Dirichlet Boundary Condition (DBC) to specific parts of the mesh, this tutorial will address those scenarios.
@@ -8,7 +8,7 @@ The preceding tutorial focused on body forces. However, in situations where you 
 from dolfin import *
 ```
 
-# Mesh entities
+## Mesh entities
 Conceptually, a mesh (modeled by the class Mesh), consists of a collection of mesh entities. A mesh entity is a pair (d, i), where d is the topological dimension of the mesh entity and i is a unique index of the mesh entity. Mesh entities are numbered within each topological dimension from 0 to nd − 1, where nd is the number of mesh entities of topological dimension d.
 
 | Entity               | Dimension           | 

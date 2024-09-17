@@ -1,4 +1,4 @@
-# Heat equation
+## Heat equation
 
 The heat equation is a fundamental partial differential equation that describes the evolution of temperature distribution over time in a given domain. In this tutorial, we will perform a 1D transient analysis of the heat equation.
 

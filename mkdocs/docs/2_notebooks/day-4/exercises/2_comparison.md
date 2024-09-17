@@ -1,4 +1,4 @@
-# Comparing linear elastic to hyper-elastic response
+## Comparing linear elastic to hyper-elastic response
 
 In this exercise you have to compare the load-displacement response of linear elastic and hyperelastic models under the same loading condition.
 
@@ -23,7 +23,7 @@ def get_reaction_force(mesh):
     return reaction
 ```
 
-# Elastic
+## Elastic
 
 
 
@@ -126,7 +126,7 @@ plt.plot(elastic_displacement, elastic_reaction_force)
     
 
 
-# Hyperelastic
+## Hyperelastic
 
 
 Define the material model parameter. Check day-4, tutorial-1

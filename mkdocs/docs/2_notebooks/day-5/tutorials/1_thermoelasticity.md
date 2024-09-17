@@ -1,4 +1,4 @@
-# Linear thermoelasticity
+## Linear thermoelasticity
 
 The temperature field is uncoupled from the mechanical fields whereas the latter depend on the temperature due to presence of thermal strains in the thermoelastic constitutive relation. This situation can be described as *weak* thermomechanical coupling.
  

@@ -1,4 +1,4 @@
-# Boundary conditions
+## Boundary conditions
 
 In FEniCS, the "CompiledSubDomain" class is a useful tool that allows users to define complex subdomains within a given computational domain for finite element simulations. Subdomains are portions of the computational domain where different physical or material properties are applied, or specific boundary conditions are imposed.
 

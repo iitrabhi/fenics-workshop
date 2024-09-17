@@ -1,4 +1,4 @@
-# Solver Design
+## Solver Design
 
 In addition to the standard `solve` method, FEniCS offers a powerful tool called the `LinearVariationalSolver`, which grants users the ability to finely adjust and control various parameters of the `solver`. This enhanced control allows for precise customization and optimization of the solver's behavior, leading to improved accuracy and efficiency in solving partial differential equations.
 
@@ -106,7 +106,7 @@ u.vector().min()
 
 
 
-### FEniCS' standard solve method relies on a direct solver, which proves inadequate for computing solutions in systems with degrees of freedom exceeding approximately one million. To address this limitation, iterative solvers and preconditioners become necessary alternatives to efficiently handle large-scale problems. By employing these techniques, FEniCS enables the successful computation of solutions in scenarios where the direct solver falls short, making it a valuable tool for tackling complex simulations and high-dimensional models.
+ FEniCS' standard solve method relies on a direct solver, which proves inadequate for computing solutions in systems with degrees of freedom exceeding approximately one million. To address this limitation, iterative solvers and preconditioners become necessary alternatives to efficiently handle large-scale problems. By employing these techniques, FEniCS enables the successful computation of solutions in scenarios where the direct solver falls short, making it a valuable tool for tackling complex simulations and high-dimensional models.
 
 
 ```python
