@@ -13,11 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mkdocs/docs/2_notebooks/day-3/tutorials/3_solver.md",
+                "file": "mkdocs/docs/index.md",
                 "mode": "source",
                 "backlinks": false,
-                "source": true
-              }
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -40,7 +42,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -55,7 +59,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -63,7 +69,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -86,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mkdocs/docs/2_notebooks/day-3/tutorials/3_solver.md",
+                "file": "mkdocs/docs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +102,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
             }
           },
           {
@@ -103,10 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mkdocs/docs/2_notebooks/day-3/tutorials/3_solver.md",
+                "file": "mkdocs/docs/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
             }
           },
           {
@@ -117,7 +129,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -126,8 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mkdocs/docs/2_notebooks/day-3/tutorials/3_solver.md"
-              }
+                "file": "mkdocs/docs/index.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
             }
           },
           {
@@ -135,7 +151,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -143,7 +161,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -155,7 +175,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ],
@@ -179,52 +201,52 @@
   },
   "active": "c82a37f86754f76b",
   "lastOpenFiles": [
-    "docs/sitemap.xml.gz",
-    "docs/sitemap.xml",
-    "docs/search.html",
-    "docs/search/worker.js",
-    "docs/search/lunr.js",
-    "docs/search/main.js",
-    "docs/search/search_index.json",
-    "docs/search",
-    "docs/js/theme.js",
-    "docs/js/jquery-3.6.0.min.js",
-    "docs/js/theme_extra.js",
-    "docs/img/logoa.svg",
-    "docs/img/logo.svg",
-    "docs/css/fonts/fontawesome-webfont.svg",
-    "docs/attachments/Pasted image 20231219133930.png",
-    "docs/2_notebooks/day-1/tutorials/1_linear_poisson_files/1_linear_poisson_27_0.png",
-    "docs/2_notebooks/day-1/tutorials/1_linear_poisson_files/1_linear_poisson_6_1.png",
-    "docs/2_notebooks/day-1/tutorials/1_linear_poisson_files/1_linear_poisson_21_1.png",
-    "docs/2_notebooks/day-1/tutorials/1_linear_poisson_files/1_linear_poisson_17_1.png",
-    "docs/2_notebooks/day-4/tutorials/2_load_displacement_files/2_load_displacement_3_1.png",
-    "docs/2_notebooks/day-4/tutorials/2_load_displacement_files/2_load_displacement_4_1.png",
-    "mkdocs/docs/2_notebooks/day-3/exercises/3_solver_design.md",
-    "mkdocs/docs/2_notebooks/day-5/tutorials/3_transient_analysis.md",
-    "mkdocs/docs/2_notebooks/day-5/tutorials/2_multi_material.md",
-    "mkdocs/docs/2_notebooks/day-5/tutorials/1_thermoelasticity.md",
-    "mkdocs/docs/2_notebooks/day-5/exercises/2_thermo_mechanical_transient.md",
-    "mkdocs/docs/2_notebooks/day-5/exercises/1_bi_metallic_quasi_static.md",
-    "mkdocs/docs/2_notebooks/day-4/exercises/2_comparison.md",
-    "mkdocs/docs/2_notebooks/day-4/exercises/1_mooney-rivlin.md",
-    "mkdocs/docs/2_notebooks/day-3/tutorials/3_solver.md",
-    "mkdocs/docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions.md",
-    "mkdocs/docs/2_notebooks/day-3/tutorials/1_beam_bending.md",
-    "mkdocs/docs/2_notebooks/day-3/exercises/2_plane_stress_strain.md",
-    "mkdocs/docs/2_notebooks/day-3/exercises/1_3d_uniaxial.md",
-    "mkdocs/docs/2_notebooks/day-2/tutorials/4_non_linear_poisson_newton_auto_diff.md",
-    "mkdocs/docs/2_notebooks/day-2/tutorials/3_non_linear_poisson_newton_manual_diff.md",
-    "mkdocs/docs/2_notebooks/day-2/tutorials/2_non_linear_poisson_newton.md",
-    "mkdocs/docs/2_notebooks/day-2/tutorials/1_non_linear_poisson_picard.md",
-    "mkdocs/docs/2_notebooks/day-2/exercises/4_manual_auto_differentiation.md",
-    "mkdocs/docs/2_notebooks/day-2/exercises/3_non_linearity_tolerances.md",
-    "mkdocs/docs/2_notebooks/day-2/exercises/2_boundary_conditions.md",
-    "mkdocs/docs/2_notebooks/day-2/exercises/1_2d_3d_domains.md",
-    "mkdocs/docs/2_notebooks/day-1/tutorials/2_visualization.md",
-    "mkdocs/docs/2_notebooks/day-1/tutorials/1_linear_poisson.md",
-    "mkdocs/docs/2_notebooks/day-1/exercises/5_convergence.md",
-    "mkdocs/docs/2_notebooks/day-1/exercises/4_spacially_varying_properties.md",
+    "docs/2_notebooks/day-5/tutorials/3_transient_analysis_files/3_transient_analysis_9_0.png",
+    "docs/2_notebooks/day-5/tutorials/3_transient_analysis/index.html",
+    "docs/2_notebooks/day-5/tutorials/2_multi_material_files/2_multi_material_9_1.png",
+    "docs/2_notebooks/day-5/tutorials/2_multi_material_files/2_multi_material_18_2.png",
+    "docs/2_notebooks/day-5/tutorials/2_multi_material/index.html",
+    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity_files/1_thermoelasticity_9_0.png",
+    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity_files/1_thermoelasticity_8_0.png",
+    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity_files/1_thermoelasticity_3_0.png",
+    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity/index.html",
+    "docs/2_notebooks/day-5/exercises/2_thermo_mechanical_transient/index.html",
+    "docs/2_notebooks/day-5/exercises/1_bi_metallic_quasi_static/index.html",
+    "docs/2_notebooks/day-3/tutorials/3_solver/index.html",
+    "docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions_files/2_load_and_boundary_conditions_27_1.png",
+    "docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions_files/2_load_and_boundary_conditions_26_1.png",
+    "docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions_files/2_load_and_boundary_conditions_25_1.png",
+    "docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions_files/2_load_and_boundary_conditions_24_1.png",
+    "docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions_files/2_load_and_boundary_conditions_23_1.png",
+    "docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions/index.html",
+    "docs/2_notebooks/day-3/tutorials/1_beam_bending/index.html",
+    "docs/2_notebooks/day-4/exercises/2_comparison/index.html",
+    "docs/2_notebooks/day-4/exercises/1_mooney-rivlin/index.html",
+    "docs/docs/index.md",
+    "docs/docs/2_notebooks/day-5/tutorials/3_transient_analysis.md",
+    "docs/docs/2_notebooks/day-5/tutorials/2_multi_material.md",
+    "docs/docs/2_notebooks/day-5/tutorials/1_thermoelasticity.md",
+    "docs/docs/2_notebooks/day-5/exercises/2_thermo_mechanical_transient.md",
+    "docs/docs/2_notebooks/day-5/exercises/1_bi_metallic_quasi_static.md",
+    "docs/docs/2_notebooks/day-4/tutorials/2_load_displacement.md",
+    "docs/docs/2_notebooks/day-4/tutorials/1_hyper_elastic.md",
+    "docs/docs/2_notebooks/day-4/exercises/2_comparison.md",
+    "docs/docs/2_notebooks/day-4/exercises/1_mooney-rivlin.md",
+    "docs/docs/2_notebooks/day-3/tutorials/3_solver.md",
+    "docs/docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions.md",
+    "docs/docs/2_notebooks/day-3/tutorials/1_beam_bending.md",
+    "docs/docs/2_notebooks/day-3/exercises/3_solver_design.md",
+    "docs/docs/2_notebooks/day-3/exercises/2_plane_stress_strain.md",
+    "docs/docs/2_notebooks/day-3/exercises/1_3d_uniaxial.md",
+    "docs/docs/2_notebooks/day-2/tutorials/4_non_linear_poisson_newton_auto_diff.md",
+    "docs/docs/2_notebooks/day-2/tutorials/3_non_linear_poisson_newton_manual_diff.md",
+    "docs/docs/2_notebooks/day-2/tutorials/2_non_linear_poisson_newton.md",
+    "docs/docs/2_notebooks/day-2/tutorials/1_non_linear_poisson_picard.md",
+    "docs/docs/2_notebooks/day-2/exercises/4_manual_auto_differentiation.md",
+    "docs/docs/2_notebooks/day-2/exercises/3_non_linearity_tolerances.md",
+    "docs/docs/2_notebooks/day-2/exercises/2_boundary_conditions.md",
+    "docs/docs/2_notebooks/day-2/exercises/1_2d_3d_domains.md",
+    "docs/docs/2_notebooks/day-1/exercises/5_convergence.md",
     "admin/architecture.canvas",
     "plan.canvas",
     "3_our_implementation/2_paper_problems/1_calibration/Untitled.canvas",

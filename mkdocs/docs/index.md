@@ -1,4 +1,4 @@
-![](attachments/Pasted%20image%2020231219133930.png)
+![](attachments/Page%201.png)
 ## Introduction to FEniCS
 
 This is a five-day course focused on solving partial differential equations (PDEs) using the FEniCS software package. The goal is to introduce the students to PDEs encountered in various engineering and science disciplines, such as solid mechanics, heat transfer, and mass transport. 
