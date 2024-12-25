@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [2_thermo_mechanical_transient](../../../../../src/day-5/exercises/2_thermo_mechanical_transient.ipynb)
+The accompanying Jupyter notebook can be obtained here [2_thermo_mechanical_transient](../../../src/day-5/exercises/2_thermo_mechanical_transient.ipynb)
+
+
 
 **Thermo-Mechanical Transient Simulation using FEniCS**
 

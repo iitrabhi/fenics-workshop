@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [3_non_linear_poisson_newton_manual_diff](../../../../../src/day-2/tutorials/3_non_linear_poisson_newton_manual_diff.ipynb)
+The accompanying Jupyter notebook can be obtained here [3_non_linear_poisson_newton_manual_diff](../../../src/day-2/tutorials/3_non_linear_poisson_newton_manual_diff.ipynb)
+
+
 
 ## Nonlinear Poisson equation 
 

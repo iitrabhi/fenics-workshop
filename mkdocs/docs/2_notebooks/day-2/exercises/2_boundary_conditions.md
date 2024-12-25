@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [2_boundary_conditions](../../../../../src/day-2/exercises/2_boundary_conditions.ipynb)
+The accompanying Jupyter notebook can be obtained here [2_boundary_conditions](../../../src/day-2/exercises/2_boundary_conditions.ipynb)
+
+
 
 ## Boundary conditions
 

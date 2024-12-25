@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [3_expressions](../../../../../src/day-1/exercises/3_expressions.ipynb)
+The accompanying Jupyter notebook can be obtained here [3_expressions](../../../src/day-1/exercises/3_expressions.ipynb)
+
+
 
 ## Expressions
 

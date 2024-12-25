@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [3_solver](../../../../../src/day-3/tutorials/3_solver.ipynb)
+The accompanying Jupyter notebook can be obtained here [3_solver](../../../src/day-3/tutorials/3_solver.ipynb)
+
+
 
 ## Solver Design
 

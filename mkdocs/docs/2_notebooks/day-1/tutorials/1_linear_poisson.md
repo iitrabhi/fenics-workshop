@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [1_linear_poisson](../../../../../src/day-1/tutorials/1_linear_poisson.ipynb)
+The accompanying Jupyter notebook can be obtained here [1_linear_poisson](../../../src/day-1/tutorials/1_linear_poisson.ipynb)
+
+
 
 ## Poissons Equation
 

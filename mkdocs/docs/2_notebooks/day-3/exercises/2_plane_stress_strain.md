@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [2_plane_stress_strain](../../../../../src/day-3/exercises/2_plane_stress_strain.ipynb)
+The accompanying Jupyter notebook can be obtained here [2_plane_stress_strain](../../../src/day-3/exercises/2_plane_stress_strain.ipynb)
+
+
 
 ## Plane stress v/s plane strain
 

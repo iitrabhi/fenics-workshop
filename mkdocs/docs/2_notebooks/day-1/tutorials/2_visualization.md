@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [2_visualization](../../../../../src/day-1/tutorials/2_visualization.ipynb)
+The accompanying Jupyter notebook can be obtained here [2_visualization](../../../src/day-1/tutorials/2_visualization.ipynb)
+
+
 
 ## Visualizing simulation results
 

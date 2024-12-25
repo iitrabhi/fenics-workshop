@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [5_convergence](../../../../../src/day-1/exercises/5_convergence.ipynb)
+The accompanying Jupyter notebook can be obtained here [5_convergence](../../../src/day-1/exercises/5_convergence.ipynb)
+
+
 
 ## Convergence
 

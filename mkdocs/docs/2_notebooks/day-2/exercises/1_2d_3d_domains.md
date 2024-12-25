@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [1_2d_3d_domains](../../../../../src/day-2/exercises/1_2d_3d_domains.ipynb)
+The accompanying Jupyter notebook can be obtained here [1_2d_3d_domains](../../../src/day-2/exercises/1_2d_3d_domains.ipynb)
+
+
 
 ## 2D and 3D domains
 

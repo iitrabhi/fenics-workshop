@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [1_mooney-rivlin](../../../../../src/day-4/exercises/1_mooney-rivlin.ipynb)
+The accompanying Jupyter notebook can be obtained here [1_mooney-rivlin](../../../src/day-4/exercises/1_mooney-rivlin.ipynb)
+
+
 
 ```python
 from dolfin import *

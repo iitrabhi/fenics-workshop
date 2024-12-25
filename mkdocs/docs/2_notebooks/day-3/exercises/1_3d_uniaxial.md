@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [1_3d_uniaxial](../../../../../src/day-3/exercises/1_3d_uniaxial.ipynb)
+The accompanying Jupyter notebook can be obtained here [1_3d_uniaxial](../../../src/day-3/exercises/1_3d_uniaxial.ipynb)
+
+
 
 ## 3D Uniaxial bar
 

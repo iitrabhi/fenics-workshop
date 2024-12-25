@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [3_transient_analysis](../../../../../src/day-5/tutorials/3_transient_analysis.ipynb)
+The accompanying Jupyter notebook can be obtained here [3_transient_analysis](../../../src/day-5/tutorials/3_transient_analysis.ipynb)
+
+
 
 ## Heat equation
 

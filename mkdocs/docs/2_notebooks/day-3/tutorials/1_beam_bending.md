@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [1_beam_bending](../../../../../src/day-3/tutorials/1_beam_bending.ipynb)
+The accompanying Jupyter notebook can be obtained here [1_beam_bending](../../../src/day-3/tutorials/1_beam_bending.ipynb)
+
+
 
 ## Linear Elasticity
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   "file-explorer",
   "global-search",
@@ -19,3 +20,35 @@
   "word-count",
   "file-recovery"
 ]
+=======
+{
+  "file-explorer": true,
+  "global-search": true,
+  "switcher": true,
+  "graph": true,
+  "backlink": true,
+  "outgoing-link": true,
+  "tag-pane": true,
+  "page-preview": true,
+  "daily-notes": true,
+  "templates": true,
+  "note-composer": true,
+  "command-palette": true,
+  "slash-command": false,
+  "editor-status": true,
+  "markdown-importer": false,
+  "zk-prefixer": false,
+  "random-note": false,
+  "outline": true,
+  "word-count": true,
+  "slides": false,
+  "audio-recorder": false,
+  "workspaces": false,
+  "file-recovery": true,
+  "publish": false,
+  "sync": false,
+  "canvas": true,
+  "bookmarks": true,
+  "properties": true
+}
+>>>>>>> 0bf3768807a079d448b9a7a6b7d82b507defcccd

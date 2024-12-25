@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [1_thermoelasticity](../../../../../src/day-5/tutorials/1_thermoelasticity.ipynb)
+The accompanying Jupyter notebook can be obtained here [1_thermoelasticity](../../../src/day-5/tutorials/1_thermoelasticity.ipynb)
+
+
 
 ## Linear thermoelasticity
 

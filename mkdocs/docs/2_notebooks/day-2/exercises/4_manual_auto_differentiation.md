@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [4_manual_auto_differentiation](../../../../../src/day-2/exercises/4_manual_auto_differentiation.ipynb)
+The accompanying Jupyter notebook can be obtained here [4_manual_auto_differentiation](../../../src/day-2/exercises/4_manual_auto_differentiation.ipynb)
+
+
 
 ## Automatic Differentiation
 Automatic Differentiation (AD) is a powerful computational tool that has revolutionized various fields, particularly in mathematics, physics, engineering, and machine learning. It provides a systematic and efficient way to compute derivatives of complex mathematical functions, allowing us to effortlessly obtain accurate and reliable gradients. This capability of AD brings a multitude of benefits, enabling faster and more robust optimization, enhancing the performance of machine learning models, and facilitating the solution of intricate differential equations.

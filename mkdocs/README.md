@@ -1,4 +1,9 @@
 ## Workflow
+For publishing the website run the following command in the mkdocs folder and push
+
+```
+sudo npm run export
+```
 
 This workflow is a series of steps that the developer follows to convert code and text from Jupyter notebooks into a live, interactive website, using specific tools and services for each step of the process.
 

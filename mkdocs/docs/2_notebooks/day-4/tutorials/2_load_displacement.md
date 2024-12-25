@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [2_load_displacement](../../../../../src/day-4/tutorials/2_load_displacement.ipynb)
+The accompanying Jupyter notebook can be obtained here [2_load_displacement](../../../src/day-4/tutorials/2_load_displacement.ipynb)
+
+
 
 # Pseudo-time analysis
 

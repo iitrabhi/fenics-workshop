@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [2_load_and_boundary_conditions](../../../../../src/day-3/tutorials/2_load_and_boundary_conditions.ipynb)
+The accompanying Jupyter notebook can be obtained here [2_load_and_boundary_conditions](../../../src/day-3/tutorials/2_load_and_boundary_conditions.ipynb)
+
+
 
 ## Loads and boundary conditions
 

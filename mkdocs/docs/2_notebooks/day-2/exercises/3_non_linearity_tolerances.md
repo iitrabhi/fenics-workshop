@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [3_non_linearity_tolerances](../../../../../src/day-2/exercises/3_non_linearity_tolerances.ipynb)
+The accompanying Jupyter notebook can be obtained here [3_non_linearity_tolerances](../../../src/day-2/exercises/3_non_linearity_tolerances.ipynb)
+
+
 
 ## Tolerances and convergence
 

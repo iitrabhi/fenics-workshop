@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [4_spacially_varying_properties](../../../../../src/day-1/exercises/4_spacially_varying_properties.ipynb)
+The accompanying Jupyter notebook can be obtained here [4_spacially_varying_properties](../../../src/day-1/exercises/4_spacially_varying_properties.ipynb)
+
+
 
 ## Spacially varying properties
 

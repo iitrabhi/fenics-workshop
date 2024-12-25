@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [1_hyper_elastic](../../../../../src/day-4/tutorials/1_hyper_elastic.ipynb)
+The accompanying Jupyter notebook can be obtained here [1_hyper_elastic](../../../src/day-4/tutorials/1_hyper_elastic.ipynb)
+
+
 
 # Hyperelasticity
 

@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [1_bi_metallic_quasi_static](../../../../../src/day-5/exercises/1_bi_metallic_quasi_static.ipynb)
+The accompanying Jupyter notebook can be obtained here [1_bi_metallic_quasi_static](../../../src/day-5/exercises/1_bi_metallic_quasi_static.ipynb)
+
+
 
 **Exercise: Bimetallic Quasi-Static Thermal Simulation using Steel and Brass Unit Square using FEniCS**
 

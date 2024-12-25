@@ -1,4 +1,6 @@
-The accompanying Jupyter notebook can be obtained here [1_built_in_mesh](../../../../../src/day-1/exercises/1_built_in_mesh.ipynb)
+The accompanying Jupyter notebook can be obtained here [1_built_in_mesh](../../../src/day-1/exercises/1_built_in_mesh.ipynb)
+
+
 
 ## Built in meshes
 
