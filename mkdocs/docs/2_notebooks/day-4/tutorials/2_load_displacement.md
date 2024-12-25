@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [2_load_displacement](../../../../../src/day-4/tutorials/2_load_displacement.ipynb)
+
 # Pseudo-time analysis
 
 Hyperelastic materials experience substantial deformations, resulting in highly nonlinear responses. Pseudo time analysis facilitates the simulation of these significant deformations while ensuring numerical accuracy throughout the process. It addresses the inherent nonlinearity of the stress-strain relationship in hyperelastic materials.

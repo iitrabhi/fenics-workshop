@@ -198,7 +198,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="pseudo-time-analysis">Pseudo-time analysis</h1>
+                <p>The accompanying Jupyter notebook can be obtained here <a href="../../../../../src/day-4/tutorials/2_load_displacement.ipynb">2_load_displacement</a></p>
+<h1 id="pseudo-time-analysis">Pseudo-time analysis</h1>
 <p>Hyperelastic materials experience substantial deformations, resulting in highly nonlinear responses. Pseudo time analysis facilitates the simulation of these significant deformations while ensuring numerical accuracy throughout the process. It addresses the inherent nonlinearity of the stress-strain relationship in hyperelastic materials.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span> <span class="nf">sigma</span><span class="p">(</span><span class="n">u</span><span class="p">):</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">I</span> <span class="o">=</span> <span class="n">Identity</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">geometric_dimension</span><span class="p">())</span>

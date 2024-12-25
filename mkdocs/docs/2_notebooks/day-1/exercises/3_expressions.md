@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [3_expressions](../../../../../src/day-1/exercises/3_expressions.ipynb)
+
 ## Expressions
 
 In FEniCS, an Expression is a flexible and convenient way to define mathematical functions or expressions within the domain of interest. Expressions are often used to specify boundary conditions, source terms, initial conditions, or any other function needed in the formulation of the PDE problem.
@@ -6,7 +8,7 @@ The beauty of using Expressions lies in their simplicity and directness. Users c
 
 Please visit the official documentation link provided to learn how to modify expressions. After familiarizing yourself with the process, return here to implement the changes and visualize the updated results.
 
-<https://fenicsproject.org/pub/tutorial/sphinx1/._ftut1003.html#index-28>
+<https://hplgit.github.io/fenics-tutorial/pub/sphinx1/._ftut1003.html#index-28>
 
 
 ```python

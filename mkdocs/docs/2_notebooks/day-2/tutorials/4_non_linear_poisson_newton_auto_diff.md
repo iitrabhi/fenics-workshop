@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [4_non_linear_poisson_newton_auto_diff](../../../../../src/day-2/tutorials/4_non_linear_poisson_newton_auto_diff.ipynb)
+
 ## Nonlinear Poisson equation 
 
 $$\begin{split}-\nabla . (q(u)\Delta(u)) &= 0,\\

@@ -198,11 +198,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="boundary-conditions">Boundary conditions</h2>
+                <p>The accompanying Jupyter notebook can be obtained here <a href="../../../../../src/day-1/exercises/2_boundary_conditions.ipynb">2_boundary_conditions</a></p>
+<h2 id="boundary-conditions">Boundary conditions</h2>
 <p>In FEniCS, the "CompiledSubDomain" class is a useful tool that allows users to define complex subdomains within a given computational domain for finite element simulations. Subdomains are portions of the computational domain where different physical or material properties are applied, or specific boundary conditions are imposed.</p>
 <p>The primary advantage of using the "CompiledSubDomain" class is that it allows you to define subdomains using mathematical expressions or conditions, which are then compiled into efficient C++ code. This compiled code is utilized during the simulation, providing a significant performance boost compared to interpreting the subdomain expressions directly in Python.</p>
 <p>Please visit the official documentation link provided to learn how to modify the bounday conditions using "CompiledSubDomain". After familiarizing yourself with the process, return here to implement the changes and visualize the updated results.</p>
-<p><a href="https://fenicsproject.org/pub/tutorial/sphinx1/._ftut1005.html#using-c-code-snippets-to-define-subdomains">https://fenicsproject.org/pub/tutorial/sphinx1/._ftut1005.html#using-c-code-snippets-to-define-subdomains</a></p>
+<p><a href="https://hplgit.github.io/fenics-tutorial/pub/sphinx1/._ftut1005.html#using-c-code-snippets-to-define-subdomains">https://hplgit.github.io/fenics-tutorial/pub/sphinx1/._ftut1005.html#using-c-code-snippets-to-define-subdomains</a></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">dolfin</span> <span class="kn">import</span> <span class="o">*</span>
 </span></code></pre></div>
 <p><strong>Change this portion of the code to:</strong>

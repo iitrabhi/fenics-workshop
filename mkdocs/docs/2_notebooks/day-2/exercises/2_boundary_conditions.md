@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [2_boundary_conditions](../../../../../src/day-2/exercises/2_boundary_conditions.ipynb)
+
 ## Boundary conditions
 
 Implement the learning of exercise-2 from day-1 to solve the non-linear Poisson's equation with different boundary conditions. Feel free to create a 2D mesh of your preference for the problem and experiment with different boundary conditions. Write the results to XDMF and visualize them in PARAVIEW.

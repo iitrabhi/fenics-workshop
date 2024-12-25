@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [1_hyper_elastic](../../../../../src/day-4/tutorials/1_hyper_elastic.ipynb)
+
 # Hyperelasticity
 
 Linear elasticity describes the mechanical response of materials under small deformations, following Hooke's Law with a linear stress-strain relationship. It is suitable for small deformation applications.

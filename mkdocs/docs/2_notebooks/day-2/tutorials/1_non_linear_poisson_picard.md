@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [1_non_linear_poisson_picard](../../../../../src/day-2/tutorials/1_non_linear_poisson_picard.ipynb)
+
 ## Nonlinear Poisson equation
 
 $$\begin{split}-\nabla . (q(u)\Delta(u)) &= 0,\\

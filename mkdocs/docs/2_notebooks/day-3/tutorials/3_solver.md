@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [3_solver](../../../../../src/day-3/tutorials/3_solver.ipynb)
+
 ## Solver Design
 
 In addition to the standard `solve` method, FEniCS offers a powerful tool called the `LinearVariationalSolver`, which grants users the ability to finely adjust and control various parameters of the `solver`. This enhanced control allows for precise customization and optimization of the solver's behavior, leading to improved accuracy and efficiency in solving partial differential equations.

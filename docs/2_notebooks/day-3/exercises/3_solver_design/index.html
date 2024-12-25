@@ -198,7 +198,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="solver-design">Solver design</h2>
+                <p>The accompanying Jupyter notebook can be obtained here <a href="../../../../../src/day-3/exercises/3_solver_design.ipynb">3_solver_design</a></p>
+<h2 id="solver-design">Solver design</h2>
 <p>The success of tackling complex problems often relies on the effectiveness of the solver employed. While formulating the mathematical model is crucial, paying attention to the design of an efficient and accurate solver is equally vital, as it directly impacts the quality and reliability of the results you obtain.</p>
 <p>In this exercise you will study the impact of different solver parameters on the solution.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">dolfin</span> <span class="kn">import</span> <span class="o">*</span>
@@ -237,7 +238,7 @@
 </span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>    <span class="n">problem</span> <span class="o">=</span> <span class="n">LinearVariationalProblem</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">bc</span><span class="p">)</span>
 </span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>    <span class="k">return</span> <span class="n">problem</span><span class="p">,</span> <span class="n">u</span>
 </span></code></pre></div>
-<p><a href="https://fenicsproject.org/pub/tutorial/html/._ftut1017.html">https://fenicsproject.org/pub/tutorial/html/._ftut1017.html</a>
+<p><a href="https://hplgit.github.io/fenics-tutorial/pub/html/._ftut1017.html">https://hplgit.github.io/fenics-tutorial/pub/html/._ftut1017.html</a>
 |Solver | Description | | | Preconditioner    |Description   |
 | -- |--|--|--|--|--|
 | bicgstab       |  Biconjugate gradient stabilized method| | | amg              |  Algebraic multigrid|

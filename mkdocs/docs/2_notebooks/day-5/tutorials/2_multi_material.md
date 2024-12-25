@@ -1,4 +1,6 @@
-<https://fenicsproject.org/pub/tutorial/sphinx1/._ftut1005.html>
+The accompanying Jupyter notebook can be obtained here [2_multi_material](../../../../../src/day-5/tutorials/2_multi_material.ipynb)
+
+<https://hplgit.github.io/fenics-tutorial/pub/sphinx1/._ftut1005.html>
 
 
 ```python

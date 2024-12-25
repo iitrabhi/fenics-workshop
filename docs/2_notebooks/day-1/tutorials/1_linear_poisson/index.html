@@ -198,7 +198,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="poissons-equation">Poissons Equation</h2>
+                <p>The accompanying Jupyter notebook can be obtained here <a href="../../../../../src/day-1/tutorials/1_linear_poisson.ipynb">1_linear_poisson</a></p>
+<h2 id="poissons-equation">Poissons Equation</h2>
 <p>Welcome to this FEniCS tutorial, where we will explore how to verify the accuracy of a Poisson's equation solver using the "manufactured solution" technique. FEniCS is a powerful open-source finite element library for solving partial differential equations (PDEs), widely used for scientific computing and simulation.</p>
 <p>The "manufactured solution" approach is a valuable method to validate the correctness of finite element implementations. In this technique, we first construct an exact solution to the PDE, often a smooth and analytically known function, that satisfies the given equation. Next, we compute the corresponding right-hand side of the PDE using the exact solution. By feeding the manufactured solution and the derived right-hand side into our FEniCS solver, we can compare the numerical solution with the exact solution, thus quantifying the solver's accuracy.</p>
 <p>In this tutorial, we will focus on solving the one-dimensional Poisson's equation:</p>
@@ -262,7 +263,7 @@
 - In 2D however, boundaries will be edges i.e lines and it goes on like that for 3D where planes will form the boundaries.</p>
 <p>And finally, the last line <strong>bc = DirichletBC(U, u_D, boundary)</strong> will apply the value of <strong>u_D</strong> to the <strong>boundary</strong> that has been defined.</p>
 <h2 id="step-5-define-weak-form">Step 5: Define weak form</h2>
-<p>Please refer <a href="https://fenicsproject.org/pub/tutorial/sphinx1/._ftut1003.html">here</a> to know how the weak form was derived.</p>
+<p>Please refer <a href="https://hplgit.github.io/fenics-tutorial/pub/sphinx1/._ftut1003.html">here</a> to know how the weak form was derived.</p>
 <div class="arithmatex">\[\begin{split}a(u, v) &amp;= L(v) \quad \forall \ v \in V, \\
 a(u, v) &amp;= \int_{\Omega} \nabla u \cdot \nabla v \, {\rm d} x, \\
 L(v)    &amp;= \int_{\Omega} f v \, {\rm d} x.\end{split}\]</div>

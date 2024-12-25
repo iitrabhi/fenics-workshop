@@ -1,9 +1,11 @@
+The accompanying Jupyter notebook can be obtained here [1_beam_bending](../../../../../src/day-3/tutorials/1_beam_bending.ipynb)
+
 ## Linear Elasticity
 
 
 Linear elasticity is a fundamental theory in mechanics that describes the deformation of solid materials under the influence of external forces. It assumes that the deformation is small and that the relationship between stress and strain is linear. The theory is widely used in various engineering applications, such as structural analysis and material design. FEniCS provides a flexible and efficient platform for implementing finite element methods, making it an excellent choice for solving problems in linear elasticity.
 
-See [here](https://fenicsproject.org/pub/tutorial/html/._ftut1008.html) to see how the weak form has been derived.
+See [here](https://hplgit.github.io/fenics-tutorial/pub/html/._ftut1008.html) to see how the weak form has been derived.
 
 Here we are going to solve a cantilever beam under self load assuming linear
 elasticity. The beam will have a length of 3m and depth of 0.3m.

@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [1_thermoelasticity](../../../../../src/day-5/tutorials/1_thermoelasticity.ipynb)
+
 ## Linear thermoelasticity
 
 The temperature field is uncoupled from the mechanical fields whereas the latter depend on the temperature due to presence of thermal strains in the thermoelastic constitutive relation. This situation can be described as *weak* thermomechanical coupling.

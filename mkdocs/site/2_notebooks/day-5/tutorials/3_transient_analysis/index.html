@@ -198,14 +198,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="heat-equation">Heat equation</h2>
+                <p>The accompanying Jupyter notebook can be obtained here <a href="../../../../../src/day-5/tutorials/3_transient_analysis.ipynb">3_transient_analysis</a></p>
+<h2 id="heat-equation">Heat equation</h2>
 <p>The heat equation is a fundamental partial differential equation that describes the evolution of temperature distribution over time in a given domain. In this tutorial, we will perform a 1D transient analysis of the heat equation.</p>
 <p>The 1D heat equation is given by:</p>
 <div class="arithmatex">\[
 \frac{\partial u}{\partial t} = k \frac{\partial^2 u}{\partial x^2} + f(x, t),
 \]</div>
 <p>where <span class="arithmatex">\(u(x, t)\)</span> is the temperature distribution at position <span class="arithmatex">\(x\)</span> and time <span class="arithmatex">\(t\)</span>, <span class="arithmatex">\(k\)</span> is the thermal conductivity, and <span class="arithmatex">\(f(x, t)\)</span> represents any source term in the equation. For this analysis, we consider a 1D domain <span class="arithmatex">\([0, L]\)</span>.</p>
-<p><a href="https://fenicsproject.org/pub/tutorial/html/._ftut1006.html">https://fenicsproject.org/pub/tutorial/html/._ftut1006.html</a></p>
+<p><a href="https://hplgit.github.io/fenics-tutorial/pub/html/._ftut1006.html">https://hplgit.github.io/fenics-tutorial/pub/html/._ftut1006.html</a></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">fenics</span> <span class="kn">import</span> <span class="o">*</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>

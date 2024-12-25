@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [2_comparison](../../../../../src/day-4/exercises/2_comparison.ipynb)
+
 ## Comparing linear elastic to hyper-elastic response
 
 In this exercise you have to compare the load-displacement response of linear elastic and hyperelastic models under the same loading condition.

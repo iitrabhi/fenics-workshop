@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [1_linear_poisson](../../../../../src/day-1/tutorials/1_linear_poisson.ipynb)
+
 ## Poissons Equation
 
 Welcome to this FEniCS tutorial, where we will explore how to verify the accuracy of a Poisson's equation solver using the "manufactured solution" technique. FEniCS is a powerful open-source finite element library for solving partial differential equations (PDEs), widely used for scientific computing and simulation.
@@ -104,7 +106,7 @@ And finally, the last line **bc = DirichletBC(U, u_D, boundary)** will apply the
 
 ## Step 5: Define weak form
 
-Please refer [here](https://fenicsproject.org/pub/tutorial/sphinx1/._ftut1003.html) to know how the weak form was derived.
+Please refer [here](https://hplgit.github.io/fenics-tutorial/pub/sphinx1/._ftut1003.html) to know how the weak form was derived.
 
 $$\begin{split}a(u, v) &= L(v) \quad \forall \ v \in V, \\
 a(u, v) &= \int_{\Omega} \nabla u \cdot \nabla v \, {\rm d} x, \\

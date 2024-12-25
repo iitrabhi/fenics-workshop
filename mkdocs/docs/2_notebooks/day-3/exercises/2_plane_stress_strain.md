@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [2_plane_stress_strain](../../../../../src/day-3/exercises/2_plane_stress_strain.ipynb)
+
 ## Plane stress v/s plane strain
 
 The objective of this exercise is to implement a finite element analysis (FEA) program using FEniCS to simulate the behavior of a beam under bending, considering both plane stress and plane strain conditions. You will write a FEniCS code to perform the analysis for both cases and compare the results with a 3D analysis of the same beam.

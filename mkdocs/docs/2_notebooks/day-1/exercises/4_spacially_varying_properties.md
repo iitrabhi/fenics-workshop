@@ -1,10 +1,12 @@
+The accompanying Jupyter notebook can be obtained here [4_spacially_varying_properties](../../../../../src/day-1/exercises/4_spacially_varying_properties.ipynb)
+
 ## Spacially varying properties
 
 With FEniCS, researchers and engineers can model and simulate problems with spatially varying material properties efficiently and accurately. We can use the Expression class provided by FEniCS to represent the material property as a function of the co-ordinate of the mesh.
 
 Please visit the official documentation link provided to learn how to modify expressions. After familiarizing yourself with the process, return here to implement the changes and visualize the updated results.
 
-<https://fenicsproject.org/pub/tutorial/sphinx1/._ftut1003.html#index-28>
+<https://hplgit.github.io/fenics-tutorial/pub/sphinx1/._ftut1003.html#index-28>
 
 
 ```python

@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [1_bi_metallic_quasi_static](../../../../../src/day-5/exercises/1_bi_metallic_quasi_static.ipynb)
+
 **Exercise: Bimetallic Quasi-Static Thermal Simulation using Steel and Brass Unit Square using FEniCS**
 
 In this exercise, you will perform a bimetallic quasi-static thermal simulation using the Finite Element Method (FEM) with FEniCS. The simulation will involve a unit square made of two different materials: steel and brass. The goal is to analyze the steady-state temperature distribution within the square and observe the thermal behavior at the interface of the two materials.     |

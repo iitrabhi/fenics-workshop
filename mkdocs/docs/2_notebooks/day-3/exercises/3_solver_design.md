@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [3_solver_design](../../../../../src/day-3/exercises/3_solver_design.ipynb)
+
 ## Solver design
 
 The success of tackling complex problems often relies on the effectiveness of the solver employed. While formulating the mathematical model is crucial, paying attention to the design of an efficient and accurate solver is equally vital, as it directly impacts the quality and reliability of the results you obtain.
@@ -43,7 +45,7 @@ def elasticity_problem(num_ele_along_depth=30):
     return problem, u
 ```
 
-<https://fenicsproject.org/pub/tutorial/html/._ftut1017.html>
+<https://hplgit.github.io/fenics-tutorial/pub/html/._ftut1017.html>
 |Solver | Description | | | Preconditioner    |Description   |
 | -- |--|--|--|--|--|
 | bicgstab       |  Biconjugate gradient stabilized method| | | amg              |  Algebraic multigrid|

@@ -198,9 +198,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="linear-elasticity">Linear Elasticity</h2>
+                <p>The accompanying Jupyter notebook can be obtained here <a href="../../../../../src/day-3/tutorials/1_beam_bending.ipynb">1_beam_bending</a></p>
+<h2 id="linear-elasticity">Linear Elasticity</h2>
 <p>Linear elasticity is a fundamental theory in mechanics that describes the deformation of solid materials under the influence of external forces. It assumes that the deformation is small and that the relationship between stress and strain is linear. The theory is widely used in various engineering applications, such as structural analysis and material design. FEniCS provides a flexible and efficient platform for implementing finite element methods, making it an excellent choice for solving problems in linear elasticity.</p>
-<p>See <a href="https://fenicsproject.org/pub/tutorial/html/._ftut1008.html">here</a> to see how the weak form has been derived.</p>
+<p>See <a href="https://hplgit.github.io/fenics-tutorial/pub/html/._ftut1008.html">here</a> to see how the weak form has been derived.</p>
 <p>Here we are going to solve a cantilever beam under self load assuming linear
 elasticity. The beam will have a length of 3m and depth of 0.3m.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">dolfin</span> <span class="kn">import</span> <span class="o">*</span>

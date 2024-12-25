@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [2_boundary_conditions](../../../../../src/day-1/exercises/2_boundary_conditions.ipynb)
+
 ## Boundary conditions
 
 In FEniCS, the "CompiledSubDomain" class is a useful tool that allows users to define complex subdomains within a given computational domain for finite element simulations. Subdomains are portions of the computational domain where different physical or material properties are applied, or specific boundary conditions are imposed.
@@ -6,7 +8,7 @@ The primary advantage of using the "CompiledSubDomain" class is that it allows y
 
 Please visit the official documentation link provided to learn how to modify the bounday conditions using "CompiledSubDomain". After familiarizing yourself with the process, return here to implement the changes and visualize the updated results.
 
-<https://fenicsproject.org/pub/tutorial/sphinx1/._ftut1005.html#using-c-code-snippets-to-define-subdomains>
+<https://hplgit.github.io/fenics-tutorial/pub/sphinx1/._ftut1005.html#using-c-code-snippets-to-define-subdomains>
 
 
 ```python

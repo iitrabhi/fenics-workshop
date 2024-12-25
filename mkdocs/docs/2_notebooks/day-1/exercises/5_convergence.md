@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [5_convergence](../../../../../src/day-1/exercises/5_convergence.ipynb)
+
 ## Convergence
 
 Convergence analysis in the FEM is a critical process that evaluates the accuracy and reliability of numerical solutions to PDEs. It involves discretizing the continuous problem into a mesh of elements and studying how the numerical solution converges to the exact solution as the mesh is refined. 

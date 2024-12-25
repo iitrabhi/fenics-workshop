@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [2_visualization](../../../../../src/day-1/tutorials/2_visualization.ipynb)
+
 ## Visualizing simulation results
 
 Once the simulation is performed in FEniCS and the results are obtained, this tutorial will show you how to save the output in the XDMF file format. XDMF is ideal for storing large-scale scientific data, especially for finite element simulations, thanks to its flexibility and efficiency.

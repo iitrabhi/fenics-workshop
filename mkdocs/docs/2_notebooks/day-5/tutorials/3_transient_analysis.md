@@ -1,3 +1,5 @@
+The accompanying Jupyter notebook can be obtained here [3_transient_analysis](../../../../../src/day-5/tutorials/3_transient_analysis.ipynb)
+
 ## Heat equation
 
 The heat equation is a fundamental partial differential equation that describes the evolution of temperature distribution over time in a given domain. In this tutorial, we will perform a 1D transient analysis of the heat equation.
@@ -10,7 +12,7 @@ $$
 
 where $u(x, t)$ is the temperature distribution at position $x$ and time $t$, $k$ is the thermal conductivity, and $f(x, t)$ represents any source term in the equation. For this analysis, we consider a 1D domain $[0, L]$.
 
-<https://fenicsproject.org/pub/tutorial/html/._ftut1006.html>
+<https://hplgit.github.io/fenics-tutorial/pub/html/._ftut1006.html>
 
 
 
