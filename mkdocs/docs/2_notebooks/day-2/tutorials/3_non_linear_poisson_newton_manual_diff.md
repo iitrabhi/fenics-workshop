@@ -63,11 +63,13 @@ Newtons method require the evaluation of Jacobian. In this notebook we use manua
 
 Manual differentiation involves calculating derivatives by hand, which can be error-prone and time-consuming for complex functions.
 
-$$F=q(u)\nabla u \cdot \nabla v\ \mathrm{d}x$$
-$$J = q(u)\nabla \delta u \cdot \nabla v\ \mathrm{d}x + q'(u)\delta u\nabla u \cdot \nabla v\ \mathrm{d}x$$
+$$\begin{split}
+F=q(u)\nabla u \cdot \nabla v\ \mathrm{d}x\\
+J = q(u)\nabla \delta u \cdot \nabla v\ \mathrm{d}x + q'(u)\delta u\nabla u \cdot \nabla v\ \mathrm{d}x
+\end{split}$$
 
 Go to this link for derivation
-https://home.simula.no/~hpl/homepage/fenics-tutorial/release-1.0/webm/nonlinear.html#a-newton-method-at-the-pde-level
+<https://home.simula.no/~hpl/homepage/fenics-tutorial/release-1.0/webm/nonlinear.html#a-newton-method-at-the-pde-level>
 
 
 ```

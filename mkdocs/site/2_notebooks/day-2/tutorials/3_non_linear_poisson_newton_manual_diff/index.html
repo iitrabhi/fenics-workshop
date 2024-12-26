@@ -241,10 +241,12 @@ q(u) &amp;= (1+u)^m\end{split}\]</div>
 </span></code></pre></div>
 <p>Newtons method require the evaluation of Jacobian. In this notebook we use manual differentiation for the evaluation of Jacobian.</p>
 <p>Manual differentiation involves calculating derivatives by hand, which can be error-prone and time-consuming for complex functions.</p>
-<div class="arithmatex">\[F=q(u)\nabla u \cdot \nabla v\ \mathrm{d}x$$
-$$J = q(u)\nabla \delta u \cdot \nabla v\ \mathrm{d}x + q'(u)\delta u\nabla u \cdot \nabla v\ \mathrm{d}x\]</div>
+<div class="arithmatex">\[\begin{split}
+F=q(u)\nabla u \cdot \nabla v\ \mathrm{d}x\\
+J = q(u)\nabla \delta u \cdot \nabla v\ \mathrm{d}x + q'(u)\delta u\nabla u \cdot \nabla v\ \mathrm{d}x
+\end{split}\]</div>
 <p>Go to this link for derivation
-https://home.simula.no/~hpl/homepage/fenics-tutorial/release-1.0/webm/nonlinear.html#a-newton-method-at-the-pde-level</p>
+<a href="https://home.simula.no/~hpl/homepage/fenics-tutorial/release-1.0/webm/nonlinear.html#a-newton-method-at-the-pde-level">https://home.simula.no/~hpl/homepage/fenics-tutorial/release-1.0/webm/nonlinear.html#a-newton-method-at-the-pde-level</a></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># Define variational problem
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>v = TestFunction(V)
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>du = TrialFunction(V)
