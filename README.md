@@ -2,6 +2,8 @@
 
 This is a five-day course focused on solving partial differential equations (PDEs) using the FEniCS software package. The goal is to introduce the students to PDEs encountered in various engineering and science disciplines, such as solid mechanics, heat transfer, and mass transport. 
 
+Website: [https://abhigupta.io/fenics-workshop](https://abhigupta.io/fenics-workshop)
+
 The course materials, including tutorials and exercises, were created as part of a five-day workshop at IIT Madras, in collaboration with Vanderbilt University, USA. These materials are presented in [Jupyter Notebooks](https://jupyter.org/), which allow you to see both the code and its explanations, as well as the results, all together.
 
 The `tutorials` are comprehensive notebooks that demonstrate how to approach different types of problems using FEniCS. On the other hand, the `exercises` are meant to be interactive, and they encourage you to expand the notebooks by adding new functionalities. This way, you can develop your expertise in using FEniCS.
