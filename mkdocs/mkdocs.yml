@@ -40,6 +40,7 @@ nav:
       - Motivation: 1_introduction/1_motivation.md
       - Installation: 1_introduction/2_installation.md
       - Quickstart: 1_introduction/3_quickstart.md
+      - SalomeTutorial: 1_introduction/5_salome_tutorial.md
       - FAQ: 1_introduction/4_faq.md  
   - Day 1:
     - Tutorials:
@@ -71,6 +72,7 @@ nav:
       - Exercise 3-1 3D Uniaxial: 2_notebooks/day-3/exercises/1_3d_uniaxial.md 
       - Exercise 3-2 Plane Stress v/s Plane strain: 2_notebooks/day-3/exercises/2_plane_stress_strain.md 
       - Exercise 3-3 Effect of solver design: 2_notebooks/day-3/exercises/3_solver_design.md 
+      - Exercise 3-4 Stress Concentration: 2_notebooks/day-3/exercises/4_stress_concentration.md 
   - Day 4:
     - Tutorials:
         - Tutorial 4-1 Solving hyper elasticity in FEniCS: 2_notebooks/day-4/tutorials/1_hyper_elastic.md 
