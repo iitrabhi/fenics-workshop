@@ -30,15 +30,15 @@ mesh = RectangleMesh(Point(0, 0), Point(length, depth),
 
 In FEniCS, a "space" is a mathematical construct that contains functions used to approximate the quantities of interest (e.g. displacement, strain, stress, force etc). Different types of function spaces are used depending on the nature of the problem and the type of field variable sought.
 
-| Quantity             | Type                | Function Space      | Dimension |
-| -------------------- | ------------------- | ------------------- | --------- |
-| Displacement (**u**) | Vector              | VectorFunctionSpace | 2D/3D     |
-| Stress               | Second-order tensor | TensorFunctionSpace | 2D/3D     |
-| Strain               | Second-order tensor | TensorFunctionSpace | 2D/3D     |
-| Von Mises Stress     | Scalar              | FunctionSpace       | 1D        |
-| Body Force           | Vector              | VectorFunctionSpace | 2D/3D     |
-| Surface Force        | Vector              | VectorFunctionSpace | 2D/3D     |
-| Surface Traction     | Second-order tensor | TensorFunctionSpace | 2D/3D     |
+| Quantity             | Type                | Function Space      |
+| -------------------- | ------------------- | ------------------- |
+| Displacement (**u**) | Vector              | VectorFunctionSpace |
+| Stress               | Second-order tensor | TensorFunctionSpace |
+| Strain               | Second-order tensor | TensorFunctionSpace |
+| Von Mises Stress     | Scalar              | FunctionSpace       |
+| Body Force           | Vector              | VectorFunctionSpace |
+| Surface Force        | Vector              | VectorFunctionSpace |
+| Surface Traction     | Vector              | VectorFunctionSpace |
 
 Note:
 

@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mkdocs/docs/index.md",
+                "file": "mkdocs/docs/2_notebooks/day-3/tutorials/1_beam_bending.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "1_beam_bending"
             }
           }
         ]
@@ -176,8 +176,8 @@
                 "showSearch": false,
                 "searchQuery": ""
               },
-              "icon": "lucide-archive",
-              "title": "All properties"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -201,27 +201,29 @@
   },
   "active": "c82a37f86754f76b",
   "lastOpenFiles": [
-    "docs/2_notebooks/day-5/tutorials/3_transient_analysis_files/3_transient_analysis_9_0.png",
-    "docs/2_notebooks/day-5/tutorials/3_transient_analysis/index.html",
-    "docs/2_notebooks/day-5/tutorials/2_multi_material_files/2_multi_material_9_1.png",
-    "docs/2_notebooks/day-5/tutorials/2_multi_material_files/2_multi_material_18_2.png",
-    "docs/2_notebooks/day-5/tutorials/2_multi_material/index.html",
-    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity_files/1_thermoelasticity_9_0.png",
-    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity_files/1_thermoelasticity_8_0.png",
-    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity_files/1_thermoelasticity_3_0.png",
-    "docs/2_notebooks/day-5/tutorials/1_thermoelasticity/index.html",
-    "docs/2_notebooks/day-5/exercises/2_thermo_mechanical_transient/index.html",
-    "docs/2_notebooks/day-5/exercises/1_bi_metallic_quasi_static/index.html",
-    "docs/2_notebooks/day-3/tutorials/3_solver/index.html",
-    "docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions_files/2_load_and_boundary_conditions_27_1.png",
-    "docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions_files/2_load_and_boundary_conditions_26_1.png",
-    "docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions_files/2_load_and_boundary_conditions_25_1.png",
-    "docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions_files/2_load_and_boundary_conditions_24_1.png",
-    "docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions_files/2_load_and_boundary_conditions_23_1.png",
-    "docs/2_notebooks/day-3/tutorials/2_load_and_boundary_conditions/index.html",
-    "docs/2_notebooks/day-3/tutorials/1_beam_bending/index.html",
-    "docs/2_notebooks/day-4/exercises/2_comparison/index.html",
-    "docs/2_notebooks/day-4/exercises/1_mooney-rivlin/index.html",
+    "mkdocs/docs/index.md",
+    "mkdocs/site/salome_tutorial/image.png",
+    "mkdocs/site/salome_tutorial/image-9.png",
+    "mkdocs/site/salome_tutorial/image-8.png",
+    "mkdocs/site/salome_tutorial/image-7.png",
+    "mkdocs/site/salome_tutorial/image-6.png",
+    "mkdocs/site/salome_tutorial/image-5.png",
+    "mkdocs/site/salome_tutorial/image-43.png",
+    "mkdocs/site/salome_tutorial/image-42.png",
+    "mkdocs/site/salome_tutorial/image-41.png",
+    "mkdocs/site/salome_tutorial/image-40.png",
+    "mkdocs/site/salome_tutorial",
+    "mkdocs/site/2_notebooks/day-3/exercises/4_stress_concentration_files",
+    "mkdocs/site/2_notebooks/day-3/exercises/4_stress_concentration/index.html",
+    "mkdocs/site/2_notebooks/day-3/exercises/4_stress_concentration",
+    "mkdocs/site/1_introduction/5_salome_tutorial/index.html",
+    "mkdocs/site/1_introduction/5_salome_tutorial",
+    "mkdocs/docs/salome_tutorial",
+    "mkdocs/docs/2_notebooks/day-3/exercises/4_stress_concentration_files",
+    "mkdocs/docs/2_notebooks/day-3/exercises/4_stress_concentration.md",
+    "mkdocs/docs/1_introduction/5_salome_tutorial.md",
+    "docs/salome_tutorial",
+    "docs/2_notebooks/day-3/exercises/4_stress_concentration_files",
     "docs/docs/index.md",
     "docs/docs/2_notebooks/day-5/tutorials/3_transient_analysis.md",
     "docs/docs/2_notebooks/day-5/tutorials/2_multi_material.md",
@@ -245,8 +247,6 @@
     "docs/docs/2_notebooks/day-2/exercises/4_manual_auto_differentiation.md",
     "docs/docs/2_notebooks/day-2/exercises/3_non_linearity_tolerances.md",
     "docs/docs/2_notebooks/day-2/exercises/2_boundary_conditions.md",
-    "docs/docs/2_notebooks/day-2/exercises/1_2d_3d_domains.md",
-    "docs/docs/2_notebooks/day-1/exercises/5_convergence.md",
     "admin/architecture.canvas",
     "plan.canvas",
     "3_our_implementation/2_paper_problems/1_calibration/Untitled.canvas",
