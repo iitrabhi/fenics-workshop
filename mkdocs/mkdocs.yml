@@ -1,4 +1,4 @@
- site_name: FEniCS Course
+site_name: FEniCS Course
 theme:
   name: readthedocs
   highlightjs: true
